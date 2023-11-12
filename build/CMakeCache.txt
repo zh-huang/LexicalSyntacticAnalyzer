@@ -110,7 +110,7 @@ CMAKE_FIND_PACKAGE_REDIRECTS_DIR:STATIC=E:/Lectures/23F-Compilation-principle/Le
 CMAKE_GNUtoMS:BOOL=OFF
 
 //Install path prefix, prepended onto install directories.
-CMAKE_INSTALL_PREFIX:PATH=C:/Program Files (x86)/LexicalSyntacticAnalyzer
+CMAKE_INSTALL_PREFIX:PATH=C:/Program Files (x86)/LexerExample
 
 //Path to a program.
 CMAKE_LINKER:FILEPATH=C:/Strawberry/c/bin/ld.exe
@@ -247,15 +247,6 @@ LexerExample_IS_TOP_LEVEL:STATIC=ON
 
 //Value Computed by CMake
 LexerExample_SOURCE_DIR:STATIC=E:/Lectures/23F-Compilation-principle/LexicalSyntacticAnalyzer
-
-//Value Computed by CMake
-LexicalSyntacticAnalyzer_BINARY_DIR:STATIC=E:/Lectures/23F-Compilation-principle/LexicalSyntacticAnalyzer/build
-
-//Value Computed by CMake
-LexicalSyntacticAnalyzer_IS_TOP_LEVEL:STATIC=ON
-
-//Value Computed by CMake
-LexicalSyntacticAnalyzer_SOURCE_DIR:STATIC=E:/Lectures/23F-Compilation-principle/LexicalSyntacticAnalyzer
 
 
 ########################
