@@ -1,0 +1,635 @@
+
+---
+events:
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-3.28/Modules/CMakeDetermineSystem.cmake:233 (message)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      The system is: Windows - 10.0.19045 - AMD64
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-3.28/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "C:/Program Files/CMake/share/cmake-3.28/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "C:/Program Files/CMake/share/cmake-3.28/Modules/CMakeDetermineCCompiler.cmake:123 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      Compiling the C compiler identification source file "CMakeCCompilerId.c" succeeded.
+      Compiler: C:/Strawberry/c/bin/gcc.exe 
+      Build flags: 
+      Id flags:  
+      
+      The output was:
+      0
+      
+      
+      Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "a.exe"
+      
+      The C compiler identification is GNU, found in:
+        E:/Lectures/23F-Compilation-principle/LexicalSyntacticAnalyzer/build/CMakeFiles/3.28.0-rc4/CompilerIdC/a.exe
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-3.28/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "C:/Program Files/CMake/share/cmake-3.28/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "C:/Program Files/CMake/share/cmake-3.28/Modules/CMakeDetermineCXXCompiler.cmake:126 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" succeeded.
+      Compiler: C:/Strawberry/c/bin/c++.exe 
+      Build flags: 
+      Id flags:  
+      
+      The output was:
+      0
+      
+      
+      Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "a.exe"
+      
+      The CXX compiler identification is GNU, found in:
+        E:/Lectures/23F-Compilation-principle/LexicalSyntacticAnalyzer/build/CMakeFiles/3.28.0-rc4/CompilerIdCXX/a.exe
+      
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-3.28/Modules/CMakeDetermineCompilerABI.cmake:57 (try_compile)"
+      - "C:/Program Files/CMake/share/cmake-3.28/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:2 (project)"
+    checks:
+      - "Detecting C compiler ABI info"
+    directories:
+      source: "E:/Lectures/23F-Compilation-principle/LexicalSyntacticAnalyzer/build/CMakeFiles/CMakeScratch/TryCompile-vcq090"
+      binary: "E:/Lectures/23F-Compilation-principle/LexicalSyntacticAnalyzer/build/CMakeFiles/CMakeScratch/TryCompile-vcq090"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+    buildResult:
+      variable: "CMAKE_C_ABI_COMPILED"
+      cached: true
+      stdout: |
+        Change Dir: 'E:/Lectures/23F-Compilation-principle/LexicalSyntacticAnalyzer/build/CMakeFiles/CMakeScratch/TryCompile-vcq090'
+        
+        Run Build Command(s): "C:/Program Files/CMake/bin/cmake.exe" -E env VERBOSE=1 C:/mingw64/bin/mingw32-make.exe -f Makefile cmTC_629c4/fast
+        C:/mingw64/bin/mingw32-make.exe  -f CMakeFiles\\cmTC_629c4.dir\\build.make CMakeFiles/cmTC_629c4.dir/build
+        mingw32-make.exe[1]: Entering directory 'E:/Lectures/23F-Compilation-principle/LexicalSyntacticAnalyzer/build/CMakeFiles/CMakeScratch/TryCompile-vcq090'
+        Building C object CMakeFiles/cmTC_629c4.dir/CMakeCCompilerABI.c.obj
+        C:\\Strawberry\\c\\bin\\gcc.exe   -v -o CMakeFiles\\cmTC_629c4.dir\\CMakeCCompilerABI.c.obj -c "C:\\Program Files\\CMake\\share\\cmake-3.28\\Modules\\CMakeCCompilerABI.c"
+        Using built-in specs.
+        COLLECT_GCC=C:\\Strawberry\\c\\bin\\gcc.exe
+        Target: i686-w64-mingw32
+        Configured with: ../../../src/gcc-4.9.2/configure --host=i686-w64-mingw32 --build=i686-w64-mingw32 --target=i686-w64-mingw32 --prefix=/mingw32 --with-gxx-include-dir=/mingw32/i686-w64-mingw32/include/c++ --enable-shared --enable-static --disable-multilib --enable-languages=c,c++,fortran,lto --enable-libstdcxx-time=yes --enable-threads=posix --enable-libgomp --enable-libatomic --enable-lto --enable-graphite --enable-checking=release --enable-fully-dynamic-string --enable-version-specific-runtime-libs --enable-sjlj-exceptions --disable-isl-version-check --disable-cloog-version-check --disable-libstdcxx-pch --disable-libstdcxx-debug --disable-bootstrap --disable-rpath --disable-win32-registry --disable-nls --disable-werror --disable-symvers --with-gnu-as --with-gnu-ld --with-arch=i686 --with-tune=generic --with-libiconv --with-system-zlib --with-gmp=/opt/build/prerequisites/i686-w64-mingw32-static --with-mpfr=/opt/build/prerequisites/i686-w64-mingw32-static --with-mpc=/opt/build/prerequisites/i686-w64-mingw32-static --with-isl=/opt/build/prerequisites/i686-w64-mingw32-static --with-cloog=/opt/build/prerequisites/i686-w64-mingw32-static --enable-cloog-backend=isl --with-pkgversion='i686-posix-sjlj, built by strawberryperl.com project' CFLAGS='-O2 -pipe -I/opt/build/i686-492-posix-sjlj-rt_v402/mingw32/opt/include -I/opt/build/prerequisites/i686-zlib-static/include -I/opt/build/prerequisites/i686-w64-mingw32-static/include' CXXFLAGS='-O2 -pipe -I/opt/build/i686-492-posix-sjlj-rt_v402/mingw32/opt/include -I/opt/build/prerequisites/i686-zlib-static/include -I/opt/build/prerequisites/i686-w64-mingw32-static/include' CPPFLAGS= LDFLAGS='-pipe -L/opt/build/i686-492-posix-sjlj-rt_v402/mingw32/opt/lib -L/opt/build/prerequisites/i686-zlib-static/lib -L/opt/build/prerequisites/i686-w64-mingw32-static/lib -Wl,--large-address-aware'
+        Thread model: posix
+        gcc version 4.9.2 (i686-posix-sjlj, built by strawberryperl.com project) 
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles\\cmTC_629c4.dir\\CMakeCCompilerABI.c.obj' '-c' '-mtune=generic' '-march=i686'
+         C:/Strawberry/c/bin/../libexec/gcc/i686-w64-mingw32/4.9.2/cc1.exe -quiet -v -iprefix C:/Strawberry/c/bin/../lib/gcc/i686-w64-mingw32/4.9.2/ -D_REENTRANT C:\\Program Files\\CMake\\share\\cmake-3.28\\Modules\\CMakeCCompilerABI.c -quiet -dumpbase CMakeCCompilerABI.c -mtune=generic -march=i686 -auxbase-strip CMakeFiles\\cmTC_629c4.dir\\CMakeCCompilerABI.c.obj -version -o C:\\Users\\HZH\\AppData\\Local\\Temp\\ccYeJRlF.s
+        GNU C (i686-posix-sjlj, built by strawberryperl.com project) version 4.9.2 (i686-w64-mingw32)
+        	compiled by GNU C version 4.8.4, GMP version 6.0.0, MPFR version 3.1.2-p9, MPC version 1.0.2
+        warning: MPFR header version 3.1.2-p9 differs from library version 3.1.2-p10.
+        GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+        ignoring duplicate directory "C:/Strawberry/c/lib/gcc/../../lib/gcc/i686-w64-mingw32/4.9.2/include"
+        ignoring duplicate directory "C:/Strawberry/c/lib/gcc/../../lib/gcc/i686-w64-mingw32/4.9.2/../../../../include"
+        ignoring nonexistent directory "/mingw32/include"
+        ignoring duplicate directory "C:/Strawberry/c/lib/gcc/../../lib/gcc/i686-w64-mingw32/4.9.2/include-fixed"
+        ignoring duplicate directory "C:/Strawberry/c/lib/gcc/../../lib/gcc/i686-w64-mingw32/4.9.2/../../../../i686-w64-mingw32/include"
+        #include "..." search starts here:
+        #include <...> search starts here:
+         C:/Strawberry/c/bin/../lib/gcc/i686-w64-mingw32/4.9.2/include
+         C:/Strawberry/c/bin/../lib/gcc/i686-w64-mingw32/4.9.2/../../../../include
+         C:/Strawberry/c/bin/../lib/gcc/i686-w64-mingw32/4.9.2/include-fixed
+         C:/Strawberry/c/bin/../lib/gcc/i686-w64-mingw32/4.9.2/../../../../i686-w64-mingw32/include
+        End of search list.
+        GNU C (i686-posix-sjlj, built by strawberryperl.com project) version 4.9.2 (i686-w64-mingw32)
+        	compiled by GNU C version 4.8.4, GMP version 6.0.0, MPFR version 3.1.2-p9, MPC version 1.0.2
+        warning: MPFR header version 3.1.2-p9 differs from library version 3.1.2-p10.
+        GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+        Compiler executable checksum: 4a5c2ceea371ffdecb636e0ffe7de44b
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles\\cmTC_629c4.dir\\CMakeCCompilerABI.c.obj' '-c' '-mtune=generic' '-march=i686'
+         C:/Strawberry/c/bin/../lib/gcc/i686-w64-mingw32/4.9.2/../../../../i686-w64-mingw32/bin/as.exe -v -o CMakeFiles\\cmTC_629c4.dir\\CMakeCCompilerABI.c.obj C:\\Users\\HZH\\AppData\\Local\\Temp\\ccYeJRlF.s
+        GNU assembler version 2.25 (i686-w64-mingw32) using BFD version (GNU Binutils) 2.25
+        COMPILER_PATH=C:/Strawberry/c/bin/../libexec/gcc/i686-w64-mingw32/4.9.2/;C:/Strawberry/c/bin/../libexec/gcc/;C:/Strawberry/c/bin/../lib/gcc/i686-w64-mingw32/4.9.2/../../../../i686-w64-mingw32/bin/
+        LIBRARY_PATH=C:/Strawberry/c/bin/../lib/gcc/i686-w64-mingw32/4.9.2/;C:/Strawberry/c/bin/../lib/gcc/;C:/Strawberry/c/bin/../lib/gcc/i686-w64-mingw32/4.9.2/../../../../i686-w64-mingw32/lib/../lib/;C:/Strawberry/c/bin/../lib/gcc/i686-w64-mingw32/4.9.2/../../../../lib/;C:/Strawberry/c/bin/../lib/gcc/i686-w64-mingw32/4.9.2/../../../../i686-w64-mingw32/lib/;C:/Strawberry/c/bin/../lib/gcc/i686-w64-mingw32/4.9.2/../../../
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles\\cmTC_629c4.dir\\CMakeCCompilerABI.c.obj' '-c' '-mtune=generic' '-march=i686'
+        Linking C executable cmTC_629c4.exe
+        "C:\\Program Files\\CMake\\bin\\cmake.exe" -E cmake_link_script CMakeFiles\\cmTC_629c4.dir\\link.txt --verbose=1
+        "C:\\Program Files\\CMake\\bin\\cmake.exe" -E rm -f CMakeFiles\\cmTC_629c4.dir/objects.a
+        C:\\Strawberry\\c\\bin\\ar.exe qc CMakeFiles\\cmTC_629c4.dir/objects.a @CMakeFiles\\cmTC_629c4.dir\\objects1.rsp
+        C:\\Strawberry\\c\\bin\\gcc.exe  -v -Wl,--whole-archive CMakeFiles\\cmTC_629c4.dir/objects.a -Wl,--no-whole-archive -o cmTC_629c4.exe -Wl,--out-implib,libcmTC_629c4.dll.a -Wl,--major-image-version,0,--minor-image-version,0 
+        Using built-in specs.
+        COLLECT_GCC=C:\\Strawberry\\c\\bin\\gcc.exe
+        COLLECT_LTO_WRAPPER=C:/Strawberry/c/bin/../libexec/gcc/i686-w64-mingw32/4.9.2/lto-wrapper.exe
+        Target: i686-w64-mingw32
+        Configured with: ../../../src/gcc-4.9.2/configure --host=i686-w64-mingw32 --build=i686-w64-mingw32 --target=i686-w64-mingw32 --prefix=/mingw32 --with-gxx-include-dir=/mingw32/i686-w64-mingw32/include/c++ --enable-shared --enable-static --disable-multilib --enable-languages=c,c++,fortran,lto --enable-libstdcxx-time=yes --enable-threads=posix --enable-libgomp --enable-libatomic --enable-lto --enable-graphite --enable-checking=release --enable-fully-dynamic-string --enable-version-specific-runtime-libs --enable-sjlj-exceptions --disable-isl-version-check --disable-cloog-version-check --disable-libstdcxx-pch --disable-libstdcxx-debug --disable-bootstrap --disable-rpath --disable-win32-registry --disable-nls --disable-werror --disable-symvers --with-gnu-as --with-gnu-ld --with-arch=i686 --with-tune=generic --with-libiconv --with-system-zlib --with-gmp=/opt/build/prerequisites/i686-w64-mingw32-static --with-mpfr=/opt/build/prerequisites/i686-w64-mingw32-static --with-mpc=/opt/build/prerequisites/i686-w64-mingw32-static --with-isl=/opt/build/prerequisites/i686-w64-mingw32-static --with-cloog=/opt/build/prerequisites/i686-w64-mingw32-static --enable-cloog-backend=isl --with-pkgversion='i686-posix-sjlj, built by strawberryperl.com project' CFLAGS='-O2 -pipe -I/opt/build/i686-492-posix-sjlj-rt_v402/mingw32/opt/include -I/opt/build/prerequisites/i686-zlib-static/include -I/opt/build/prerequisites/i686-w64-mingw32-static/include' CXXFLAGS='-O2 -pipe -I/opt/build/i686-492-posix-sjlj-rt_v402/mingw32/opt/include -I/opt/build/prerequisites/i686-zlib-static/include -I/opt/build/prerequisites/i686-w64-mingw32-static/include' CPPFLAGS= LDFLAGS='-pipe -L/opt/build/i686-492-posix-sjlj-rt_v402/mingw32/opt/lib -L/opt/build/prerequisites/i686-zlib-static/lib -L/opt/build/prerequisites/i686-w64-mingw32-static/lib -Wl,--large-address-aware'
+        Thread model: posix
+        gcc version 4.9.2 (i686-posix-sjlj, built by strawberryperl.com project) 
+        COMPILER_PATH=C:/Strawberry/c/bin/../libexec/gcc/i686-w64-mingw32/4.9.2/;C:/Strawberry/c/bin/../libexec/gcc/;C:/Strawberry/c/bin/../lib/gcc/i686-w64-mingw32/4.9.2/../../../../i686-w64-mingw32/bin/
+        LIBRARY_PATH=C:/Strawberry/c/bin/../lib/gcc/i686-w64-mingw32/4.9.2/;C:/Strawberry/c/bin/../lib/gcc/;C:/Strawberry/c/bin/../lib/gcc/i686-w64-mingw32/4.9.2/../../../../i686-w64-mingw32/lib/../lib/;C:/Strawberry/c/bin/../lib/gcc/i686-w64-mingw32/4.9.2/../../../../lib/;C:/Strawberry/c/bin/../lib/gcc/i686-w64-mingw32/4.9.2/../../../../i686-w64-mingw32/lib/;C:/Strawberry/c/bin/../lib/gcc/i686-w64-mingw32/4.9.2/../../../
+        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_629c4.exe' '-mtune=generic' '-march=i686'
+         C:/Strawberry/c/bin/../libexec/gcc/i686-w64-mingw32/4.9.2/collect2.exe -plugin C:/Strawberry/c/bin/../libexec/gcc/i686-w64-mingw32/4.9.2/liblto_plugin-0.dll -plugin-opt=C:/Strawberry/c/bin/../libexec/gcc/i686-w64-mingw32/4.9.2/lto-wrapper.exe -plugin-opt=-fresolution=C:\\Users\\HZH\\AppData\\Local\\Temp\\ccGFzZE8.res -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_eh -plugin-opt=-pass-through=-lmoldname -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-lpthread -plugin-opt=-pass-through=-ladvapi32 -plugin-opt=-pass-through=-lshell32 -plugin-opt=-pass-through=-luser32 -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-liconv -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_eh -plugin-opt=-pass-through=-lmoldname -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -m i386pe -Bdynamic -o cmTC_629c4.exe C:/Strawberry/c/bin/../lib/gcc/i686-w64-mingw32/4.9.2/../../../../i686-w64-mingw32/lib/../lib/crt2.o C:/Strawberry/c/bin/../lib/gcc/i686-w64-mingw32/4.9.2/crtbegin.o -LC:/Strawberry/c/bin/../lib/gcc/i686-w64-mingw32/4.9.2 -LC:/Strawberry/c/bin/../lib/gcc -LC:/Strawberry/c/bin/../lib/gcc/i686-w64-mingw32/4.9.2/../../../../i686-w64-mingw32/lib/../lib -LC:/Strawberry/c/bin/../lib/gcc/i686-w64-mingw32/4.9.2/../../../../lib -LC:/Strawberry/c/bin/../lib/gcc/i686-w64-mingw32/4.9.2/../../../../i686-w64-mingw32/lib -LC:/Strawberry/c/bin/../lib/gcc/i686-w64-mingw32/4.9.2/../../.. --whole-archive CMakeFiles\\cmTC_629c4.dir/objects.a --no-whole-archive --out-implib libcmTC_629c4.dll.a --major-image-version 0 --minor-image-version 0 -lmingw32 -lgcc -lgcc_eh -lmoldname -lmingwex -lmsvcrt -lpthread -ladvapi32 -lshell32 -luser32 -lkernel32 -liconv -lmingw32 -lgcc -lgcc_eh -lmoldname -lmingwex -lmsvcrt C:/Strawberry/c/bin/../lib/gcc/i686-w64-mingw32/4.9.2/crtend.o
+        mingw32-make.exe[1]: Leaving directory 'E:/Lectures/23F-Compilation-principle/LexicalSyntacticAnalyzer/build/CMakeFiles/CMakeScratch/TryCompile-vcq090'
+        
+      exitCode: 0
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-3.28/Modules/CMakeDetermineCompilerABI.cmake:127 (message)"
+      - "C:/Program Files/CMake/share/cmake-3.28/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      Parsed C implicit include dir info: rv=done
+        found start of include info
+        found start of implicit include info
+          add: [C:/Strawberry/c/bin/../lib/gcc/i686-w64-mingw32/4.9.2/include]
+          add: [C:/Strawberry/c/bin/../lib/gcc/i686-w64-mingw32/4.9.2/../../../../include]
+          add: [C:/Strawberry/c/bin/../lib/gcc/i686-w64-mingw32/4.9.2/include-fixed]
+          add: [C:/Strawberry/c/bin/../lib/gcc/i686-w64-mingw32/4.9.2/../../../../i686-w64-mingw32/include]
+        end of search list found
+        collapse include dir [C:/Strawberry/c/bin/../lib/gcc/i686-w64-mingw32/4.9.2/include] ==> [C:/Strawberry/c/lib/gcc/i686-w64-mingw32/4.9.2/include]
+        collapse include dir [C:/Strawberry/c/bin/../lib/gcc/i686-w64-mingw32/4.9.2/../../../../include] ==> [C:/Strawberry/c/include]
+        collapse include dir [C:/Strawberry/c/bin/../lib/gcc/i686-w64-mingw32/4.9.2/include-fixed] ==> [C:/Strawberry/c/lib/gcc/i686-w64-mingw32/4.9.2/include-fixed]
+        collapse include dir [C:/Strawberry/c/bin/../lib/gcc/i686-w64-mingw32/4.9.2/../../../../i686-w64-mingw32/include] ==> [C:/Strawberry/c/i686-w64-mingw32/include]
+        implicit include dirs: [C:/Strawberry/c/lib/gcc/i686-w64-mingw32/4.9.2/include;C:/Strawberry/c/include;C:/Strawberry/c/lib/gcc/i686-w64-mingw32/4.9.2/include-fixed;C:/Strawberry/c/i686-w64-mingw32/include]
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-3.28/Modules/CMakeDetermineCompilerABI.cmake:159 (message)"
+      - "C:/Program Files/CMake/share/cmake-3.28/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      Parsed C implicit link information:
+        link line regex: [^( *|.*[/\\])(ld\\.exe|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
+        ignore line: [Change Dir: 'E:/Lectures/23F-Compilation-principle/LexicalSyntacticAnalyzer/build/CMakeFiles/CMakeScratch/TryCompile-vcq090']
+        ignore line: []
+        ignore line: [Run Build Command(s): "C:/Program Files/CMake/bin/cmake.exe" -E env VERBOSE=1 C:/mingw64/bin/mingw32-make.exe -f Makefile cmTC_629c4/fast]
+        ignore line: [C:/mingw64/bin/mingw32-make.exe  -f CMakeFiles\\cmTC_629c4.dir\\build.make CMakeFiles/cmTC_629c4.dir/build]
+        ignore line: [mingw32-make.exe[1]: Entering directory 'E:/Lectures/23F-Compilation-principle/LexicalSyntacticAnalyzer/build/CMakeFiles/CMakeScratch/TryCompile-vcq090']
+        ignore line: [Building C object CMakeFiles/cmTC_629c4.dir/CMakeCCompilerABI.c.obj]
+        ignore line: [C:\\Strawberry\\c\\bin\\gcc.exe   -v -o CMakeFiles\\cmTC_629c4.dir\\CMakeCCompilerABI.c.obj -c "C:\\Program Files\\CMake\\share\\cmake-3.28\\Modules\\CMakeCCompilerABI.c"]
+        ignore line: [Using built-in specs.]
+        ignore line: [COLLECT_GCC=C:\\Strawberry\\c\\bin\\gcc.exe]
+        ignore line: [Target: i686-w64-mingw32]
+        ignore line: [Configured with: ../../../src/gcc-4.9.2/configure --host=i686-w64-mingw32 --build=i686-w64-mingw32 --target=i686-w64-mingw32 --prefix=/mingw32 --with-gxx-include-dir=/mingw32/i686-w64-mingw32/include/c++ --enable-shared --enable-static --disable-multilib --enable-languages=c,c++,fortran,lto --enable-libstdcxx-time=yes --enable-threads=posix --enable-libgomp --enable-libatomic --enable-lto --enable-graphite --enable-checking=release --enable-fully-dynamic-string --enable-version-specific-runtime-libs --enable-sjlj-exceptions --disable-isl-version-check --disable-cloog-version-check --disable-libstdcxx-pch --disable-libstdcxx-debug --disable-bootstrap --disable-rpath --disable-win32-registry --disable-nls --disable-werror --disable-symvers --with-gnu-as --with-gnu-ld --with-arch=i686 --with-tune=generic --with-libiconv --with-system-zlib --with-gmp=/opt/build/prerequisites/i686-w64-mingw32-static --with-mpfr=/opt/build/prerequisites/i686-w64-mingw32-static --with-mpc=/opt/build/prerequisites/i686-w64-mingw32-static --with-isl=/opt/build/prerequisites/i686-w64-mingw32-static --with-cloog=/opt/build/prerequisites/i686-w64-mingw32-static --enable-cloog-backend=isl --with-pkgversion='i686-posix-sjlj, built by strawberryperl.com project' CFLAGS='-O2 -pipe -I/opt/build/i686-492-posix-sjlj-rt_v402/mingw32/opt/include -I/opt/build/prerequisites/i686-zlib-static/include -I/opt/build/prerequisites/i686-w64-mingw32-static/include' CXXFLAGS='-O2 -pipe -I/opt/build/i686-492-posix-sjlj-rt_v402/mingw32/opt/include -I/opt/build/prerequisites/i686-zlib-static/include -I/opt/build/prerequisites/i686-w64-mingw32-static/include' CPPFLAGS= LDFLAGS='-pipe -L/opt/build/i686-492-posix-sjlj-rt_v402/mingw32/opt/lib -L/opt/build/prerequisites/i686-zlib-static/lib -L/opt/build/prerequisites/i686-w64-mingw32-static/lib -Wl,--large-address-aware']
+        ignore line: [Thread model: posix]
+        ignore line: [gcc version 4.9.2 (i686-posix-sjlj  built by strawberryperl.com project) ]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles\\cmTC_629c4.dir\\CMakeCCompilerABI.c.obj' '-c' '-mtune=generic' '-march=i686']
+        ignore line: [ C:/Strawberry/c/bin/../libexec/gcc/i686-w64-mingw32/4.9.2/cc1.exe -quiet -v -iprefix C:/Strawberry/c/bin/../lib/gcc/i686-w64-mingw32/4.9.2/ -D_REENTRANT C:\\Program Files\\CMake\\share\\cmake-3.28\\Modules\\CMakeCCompilerABI.c -quiet -dumpbase CMakeCCompilerABI.c -mtune=generic -march=i686 -auxbase-strip CMakeFiles\\cmTC_629c4.dir\\CMakeCCompilerABI.c.obj -version -o C:\\Users\\HZH\\AppData\\Local\\Temp\\ccYeJRlF.s]
+        ignore line: [GNU C (i686-posix-sjlj  built by strawberryperl.com project) version 4.9.2 (i686-w64-mingw32)]
+        ignore line: [	compiled by GNU C version 4.8.4  GMP version 6.0.0  MPFR version 3.1.2-p9  MPC version 1.0.2]
+        ignore line: [warning: MPFR header version 3.1.2-p9 differs from library version 3.1.2-p10.]
+        ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
+        ignore line: [ignoring duplicate directory "C:/Strawberry/c/lib/gcc/../../lib/gcc/i686-w64-mingw32/4.9.2/include"]
+        ignore line: [ignoring duplicate directory "C:/Strawberry/c/lib/gcc/../../lib/gcc/i686-w64-mingw32/4.9.2/../../../../include"]
+        ignore line: [ignoring nonexistent directory "/mingw32/include"]
+        ignore line: [ignoring duplicate directory "C:/Strawberry/c/lib/gcc/../../lib/gcc/i686-w64-mingw32/4.9.2/include-fixed"]
+        ignore line: [ignoring duplicate directory "C:/Strawberry/c/lib/gcc/../../lib/gcc/i686-w64-mingw32/4.9.2/../../../../i686-w64-mingw32/include"]
+        ignore line: [#include "..." search starts here:]
+        ignore line: [#include <...> search starts here:]
+        ignore line: [ C:/Strawberry/c/bin/../lib/gcc/i686-w64-mingw32/4.9.2/include]
+        ignore line: [ C:/Strawberry/c/bin/../lib/gcc/i686-w64-mingw32/4.9.2/../../../../include]
+        ignore line: [ C:/Strawberry/c/bin/../lib/gcc/i686-w64-mingw32/4.9.2/include-fixed]
+        ignore line: [ C:/Strawberry/c/bin/../lib/gcc/i686-w64-mingw32/4.9.2/../../../../i686-w64-mingw32/include]
+        ignore line: [End of search list.]
+        ignore line: [GNU C (i686-posix-sjlj  built by strawberryperl.com project) version 4.9.2 (i686-w64-mingw32)]
+        ignore line: [	compiled by GNU C version 4.8.4  GMP version 6.0.0  MPFR version 3.1.2-p9  MPC version 1.0.2]
+        ignore line: [warning: MPFR header version 3.1.2-p9 differs from library version 3.1.2-p10.]
+        ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
+        ignore line: [Compiler executable checksum: 4a5c2ceea371ffdecb636e0ffe7de44b]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles\\cmTC_629c4.dir\\CMakeCCompilerABI.c.obj' '-c' '-mtune=generic' '-march=i686']
+        ignore line: [ C:/Strawberry/c/bin/../lib/gcc/i686-w64-mingw32/4.9.2/../../../../i686-w64-mingw32/bin/as.exe -v -o CMakeFiles\\cmTC_629c4.dir\\CMakeCCompilerABI.c.obj C:\\Users\\HZH\\AppData\\Local\\Temp\\ccYeJRlF.s]
+        ignore line: [GNU assembler version 2.25 (i686-w64-mingw32) using BFD version (GNU Binutils) 2.25]
+        ignore line: [COMPILER_PATH=C:/Strawberry/c/bin/../libexec/gcc/i686-w64-mingw32/4.9.2/]
+        ignore line: [C:/Strawberry/c/bin/../libexec/gcc/]
+        ignore line: [C:/Strawberry/c/bin/../lib/gcc/i686-w64-mingw32/4.9.2/../../../../i686-w64-mingw32/bin/]
+        ignore line: [LIBRARY_PATH=C:/Strawberry/c/bin/../lib/gcc/i686-w64-mingw32/4.9.2/]
+        ignore line: [C:/Strawberry/c/bin/../lib/gcc/]
+        ignore line: [C:/Strawberry/c/bin/../lib/gcc/i686-w64-mingw32/4.9.2/../../../../i686-w64-mingw32/lib/../lib/]
+        ignore line: [C:/Strawberry/c/bin/../lib/gcc/i686-w64-mingw32/4.9.2/../../../../lib/]
+        ignore line: [C:/Strawberry/c/bin/../lib/gcc/i686-w64-mingw32/4.9.2/../../../../i686-w64-mingw32/lib/]
+        ignore line: [C:/Strawberry/c/bin/../lib/gcc/i686-w64-mingw32/4.9.2/../../../]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles\\cmTC_629c4.dir\\CMakeCCompilerABI.c.obj' '-c' '-mtune=generic' '-march=i686']
+        ignore line: [Linking C executable cmTC_629c4.exe]
+        ignore line: ["C:\\Program Files\\CMake\\bin\\cmake.exe" -E cmake_link_script CMakeFiles\\cmTC_629c4.dir\\link.txt --verbose=1]
+        ignore line: ["C:\\Program Files\\CMake\\bin\\cmake.exe" -E rm -f CMakeFiles\\cmTC_629c4.dir/objects.a]
+        ignore line: [C:\\Strawberry\\c\\bin\\ar.exe qc CMakeFiles\\cmTC_629c4.dir/objects.a @CMakeFiles\\cmTC_629c4.dir\\objects1.rsp]
+        ignore line: [C:\\Strawberry\\c\\bin\\gcc.exe  -v -Wl --whole-archive CMakeFiles\\cmTC_629c4.dir/objects.a -Wl --no-whole-archive -o cmTC_629c4.exe -Wl --out-implib libcmTC_629c4.dll.a -Wl --major-image-version 0 --minor-image-version 0 ]
+        ignore line: [Using built-in specs.]
+        ignore line: [COLLECT_GCC=C:\\Strawberry\\c\\bin\\gcc.exe]
+        ignore line: [COLLECT_LTO_WRAPPER=C:/Strawberry/c/bin/../libexec/gcc/i686-w64-mingw32/4.9.2/lto-wrapper.exe]
+        ignore line: [Target: i686-w64-mingw32]
+        ignore line: [Configured with: ../../../src/gcc-4.9.2/configure --host=i686-w64-mingw32 --build=i686-w64-mingw32 --target=i686-w64-mingw32 --prefix=/mingw32 --with-gxx-include-dir=/mingw32/i686-w64-mingw32/include/c++ --enable-shared --enable-static --disable-multilib --enable-languages=c,c++,fortran,lto --enable-libstdcxx-time=yes --enable-threads=posix --enable-libgomp --enable-libatomic --enable-lto --enable-graphite --enable-checking=release --enable-fully-dynamic-string --enable-version-specific-runtime-libs --enable-sjlj-exceptions --disable-isl-version-check --disable-cloog-version-check --disable-libstdcxx-pch --disable-libstdcxx-debug --disable-bootstrap --disable-rpath --disable-win32-registry --disable-nls --disable-werror --disable-symvers --with-gnu-as --with-gnu-ld --with-arch=i686 --with-tune=generic --with-libiconv --with-system-zlib --with-gmp=/opt/build/prerequisites/i686-w64-mingw32-static --with-mpfr=/opt/build/prerequisites/i686-w64-mingw32-static --with-mpc=/opt/build/prerequisites/i686-w64-mingw32-static --with-isl=/opt/build/prerequisites/i686-w64-mingw32-static --with-cloog=/opt/build/prerequisites/i686-w64-mingw32-static --enable-cloog-backend=isl --with-pkgversion='i686-posix-sjlj, built by strawberryperl.com project' CFLAGS='-O2 -pipe -I/opt/build/i686-492-posix-sjlj-rt_v402/mingw32/opt/include -I/opt/build/prerequisites/i686-zlib-static/include -I/opt/build/prerequisites/i686-w64-mingw32-static/include' CXXFLAGS='-O2 -pipe -I/opt/build/i686-492-posix-sjlj-rt_v402/mingw32/opt/include -I/opt/build/prerequisites/i686-zlib-static/include -I/opt/build/prerequisites/i686-w64-mingw32-static/include' CPPFLAGS= LDFLAGS='-pipe -L/opt/build/i686-492-posix-sjlj-rt_v402/mingw32/opt/lib -L/opt/build/prerequisites/i686-zlib-static/lib -L/opt/build/prerequisites/i686-w64-mingw32-static/lib -Wl,--large-address-aware']
+        ignore line: [Thread model: posix]
+        ignore line: [gcc version 4.9.2 (i686-posix-sjlj  built by strawberryperl.com project) ]
+        ignore line: [COMPILER_PATH=C:/Strawberry/c/bin/../libexec/gcc/i686-w64-mingw32/4.9.2/]
+        ignore line: [C:/Strawberry/c/bin/../libexec/gcc/]
+        ignore line: [C:/Strawberry/c/bin/../lib/gcc/i686-w64-mingw32/4.9.2/../../../../i686-w64-mingw32/bin/]
+        ignore line: [LIBRARY_PATH=C:/Strawberry/c/bin/../lib/gcc/i686-w64-mingw32/4.9.2/]
+        ignore line: [C:/Strawberry/c/bin/../lib/gcc/]
+        ignore line: [C:/Strawberry/c/bin/../lib/gcc/i686-w64-mingw32/4.9.2/../../../../i686-w64-mingw32/lib/../lib/]
+        ignore line: [C:/Strawberry/c/bin/../lib/gcc/i686-w64-mingw32/4.9.2/../../../../lib/]
+        ignore line: [C:/Strawberry/c/bin/../lib/gcc/i686-w64-mingw32/4.9.2/../../../../i686-w64-mingw32/lib/]
+        ignore line: [C:/Strawberry/c/bin/../lib/gcc/i686-w64-mingw32/4.9.2/../../../]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_629c4.exe' '-mtune=generic' '-march=i686']
+        link line: [ C:/Strawberry/c/bin/../libexec/gcc/i686-w64-mingw32/4.9.2/collect2.exe -plugin C:/Strawberry/c/bin/../libexec/gcc/i686-w64-mingw32/4.9.2/liblto_plugin-0.dll -plugin-opt=C:/Strawberry/c/bin/../libexec/gcc/i686-w64-mingw32/4.9.2/lto-wrapper.exe -plugin-opt=-fresolution=C:\\Users\\HZH\\AppData\\Local\\Temp\\ccGFzZE8.res -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_eh -plugin-opt=-pass-through=-lmoldname -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-lpthread -plugin-opt=-pass-through=-ladvapi32 -plugin-opt=-pass-through=-lshell32 -plugin-opt=-pass-through=-luser32 -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-liconv -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_eh -plugin-opt=-pass-through=-lmoldname -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -m i386pe -Bdynamic -o cmTC_629c4.exe C:/Strawberry/c/bin/../lib/gcc/i686-w64-mingw32/4.9.2/../../../../i686-w64-mingw32/lib/../lib/crt2.o C:/Strawberry/c/bin/../lib/gcc/i686-w64-mingw32/4.9.2/crtbegin.o -LC:/Strawberry/c/bin/../lib/gcc/i686-w64-mingw32/4.9.2 -LC:/Strawberry/c/bin/../lib/gcc -LC:/Strawberry/c/bin/../lib/gcc/i686-w64-mingw32/4.9.2/../../../../i686-w64-mingw32/lib/../lib -LC:/Strawberry/c/bin/../lib/gcc/i686-w64-mingw32/4.9.2/../../../../lib -LC:/Strawberry/c/bin/../lib/gcc/i686-w64-mingw32/4.9.2/../../../../i686-w64-mingw32/lib -LC:/Strawberry/c/bin/../lib/gcc/i686-w64-mingw32/4.9.2/../../.. --whole-archive CMakeFiles\\cmTC_629c4.dir/objects.a --no-whole-archive --out-implib libcmTC_629c4.dll.a --major-image-version 0 --minor-image-version 0 -lmingw32 -lgcc -lgcc_eh -lmoldname -lmingwex -lmsvcrt -lpthread -ladvapi32 -lshell32 -luser32 -lkernel32 -liconv -lmingw32 -lgcc -lgcc_eh -lmoldname -lmingwex -lmsvcrt C:/Strawberry/c/bin/../lib/gcc/i686-w64-mingw32/4.9.2/crtend.o]
+          arg [C:/Strawberry/c/bin/../libexec/gcc/i686-w64-mingw32/4.9.2/collect2.exe] ==> ignore
+          arg [-plugin] ==> ignore
+          arg [C:/Strawberry/c/bin/../libexec/gcc/i686-w64-mingw32/4.9.2/liblto_plugin-0.dll] ==> ignore
+          arg [-plugin-opt=C:/Strawberry/c/bin/../libexec/gcc/i686-w64-mingw32/4.9.2/lto-wrapper.exe] ==> ignore
+          arg [-plugin-opt=-fresolution=C:\\Users\\HZH\\AppData\\Local\\Temp\\ccGFzZE8.res] ==> ignore
+          arg [-plugin-opt=-pass-through=-lmingw32] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc_eh] ==> ignore
+          arg [-plugin-opt=-pass-through=-lmoldname] ==> ignore
+          arg [-plugin-opt=-pass-through=-lmingwex] ==> ignore
+          arg [-plugin-opt=-pass-through=-lmsvcrt] ==> ignore
+          arg [-plugin-opt=-pass-through=-lpthread] ==> ignore
+          arg [-plugin-opt=-pass-through=-ladvapi32] ==> ignore
+          arg [-plugin-opt=-pass-through=-lshell32] ==> ignore
+          arg [-plugin-opt=-pass-through=-luser32] ==> ignore
+          arg [-plugin-opt=-pass-through=-lkernel32] ==> ignore
+          arg [-plugin-opt=-pass-through=-liconv] ==> ignore
+          arg [-plugin-opt=-pass-through=-lmingw32] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc_eh] ==> ignore
+          arg [-plugin-opt=-pass-through=-lmoldname] ==> ignore
+          arg [-plugin-opt=-pass-through=-lmingwex] ==> ignore
+          arg [-plugin-opt=-pass-through=-lmsvcrt] ==> ignore
+          arg [-m] ==> ignore
+          arg [i386pe] ==> ignore
+          arg [-Bdynamic] ==> search dynamic
+          arg [-o] ==> ignore
+          arg [cmTC_629c4.exe] ==> ignore
+          arg [C:/Strawberry/c/bin/../lib/gcc/i686-w64-mingw32/4.9.2/../../../../i686-w64-mingw32/lib/../lib/crt2.o] ==> obj [C:/Strawberry/c/bin/../lib/gcc/i686-w64-mingw32/4.9.2/../../../../i686-w64-mingw32/lib/../lib/crt2.o]
+          arg [C:/Strawberry/c/bin/../lib/gcc/i686-w64-mingw32/4.9.2/crtbegin.o] ==> obj [C:/Strawberry/c/bin/../lib/gcc/i686-w64-mingw32/4.9.2/crtbegin.o]
+          arg [-LC:/Strawberry/c/bin/../lib/gcc/i686-w64-mingw32/4.9.2] ==> dir [C:/Strawberry/c/bin/../lib/gcc/i686-w64-mingw32/4.9.2]
+          arg [-LC:/Strawberry/c/bin/../lib/gcc] ==> dir [C:/Strawberry/c/bin/../lib/gcc]
+          arg [-LC:/Strawberry/c/bin/../lib/gcc/i686-w64-mingw32/4.9.2/../../../../i686-w64-mingw32/lib/../lib] ==> dir [C:/Strawberry/c/bin/../lib/gcc/i686-w64-mingw32/4.9.2/../../../../i686-w64-mingw32/lib/../lib]
+          arg [-LC:/Strawberry/c/bin/../lib/gcc/i686-w64-mingw32/4.9.2/../../../../lib] ==> dir [C:/Strawberry/c/bin/../lib/gcc/i686-w64-mingw32/4.9.2/../../../../lib]
+          arg [-LC:/Strawberry/c/bin/../lib/gcc/i686-w64-mingw32/4.9.2/../../../../i686-w64-mingw32/lib] ==> dir [C:/Strawberry/c/bin/../lib/gcc/i686-w64-mingw32/4.9.2/../../../../i686-w64-mingw32/lib]
+          arg [-LC:/Strawberry/c/bin/../lib/gcc/i686-w64-mingw32/4.9.2/../../..] ==> dir [C:/Strawberry/c/bin/../lib/gcc/i686-w64-mingw32/4.9.2/../../..]
+          arg [--whole-archive] ==> ignore
+          arg [CMakeFiles\\cmTC_629c4.dir/objects.a] ==> ignore
+          arg [--no-whole-archive] ==> ignore
+          arg [--out-implib] ==> ignore
+          arg [libcmTC_629c4.dll.a] ==> ignore
+          arg [--major-image-version] ==> ignore
+          arg [0] ==> ignore
+          arg [--minor-image-version] ==> ignore
+          arg [0] ==> ignore
+          arg [-lmingw32] ==> lib [mingw32]
+          arg [-lgcc] ==> lib [gcc]
+          arg [-lgcc_eh] ==> lib [gcc_eh]
+          arg [-lmoldname] ==> lib [moldname]
+          arg [-lmingwex] ==> lib [mingwex]
+          arg [-lmsvcrt] ==> lib [msvcrt]
+          arg [-lpthread] ==> lib [pthread]
+          arg [-ladvapi32] ==> lib [advapi32]
+          arg [-lshell32] ==> lib [shell32]
+          arg [-luser32] ==> lib [user32]
+          arg [-lkernel32] ==> lib [kernel32]
+          arg [-liconv] ==> lib [iconv]
+          arg [-lmingw32] ==> lib [mingw32]
+          arg [-lgcc] ==> lib [gcc]
+          arg [-lgcc_eh] ==> lib [gcc_eh]
+          arg [-lmoldname] ==> lib [moldname]
+          arg [-lmingwex] ==> lib [mingwex]
+          arg [-lmsvcrt] ==> lib [msvcrt]
+          arg [C:/Strawberry/c/bin/../lib/gcc/i686-w64-mingw32/4.9.2/crtend.o] ==> obj [C:/Strawberry/c/bin/../lib/gcc/i686-w64-mingw32/4.9.2/crtend.o]
+        remove lib [gcc_eh]
+        remove lib [msvcrt]
+        remove lib [gcc_eh]
+        remove lib [msvcrt]
+        collapse obj [C:/Strawberry/c/bin/../lib/gcc/i686-w64-mingw32/4.9.2/../../../../i686-w64-mingw32/lib/../lib/crt2.o] ==> [C:/Strawberry/c/i686-w64-mingw32/lib/crt2.o]
+        collapse obj [C:/Strawberry/c/bin/../lib/gcc/i686-w64-mingw32/4.9.2/crtbegin.o] ==> [C:/Strawberry/c/lib/gcc/i686-w64-mingw32/4.9.2/crtbegin.o]
+        collapse obj [C:/Strawberry/c/bin/../lib/gcc/i686-w64-mingw32/4.9.2/crtend.o] ==> [C:/Strawberry/c/lib/gcc/i686-w64-mingw32/4.9.2/crtend.o]
+        collapse library dir [C:/Strawberry/c/bin/../lib/gcc/i686-w64-mingw32/4.9.2] ==> [C:/Strawberry/c/lib/gcc/i686-w64-mingw32/4.9.2]
+        collapse library dir [C:/Strawberry/c/bin/../lib/gcc] ==> [C:/Strawberry/c/lib/gcc]
+        collapse library dir [C:/Strawberry/c/bin/../lib/gcc/i686-w64-mingw32/4.9.2/../../../../i686-w64-mingw32/lib/../lib] ==> [C:/Strawberry/c/i686-w64-mingw32/lib]
+        collapse library dir [C:/Strawberry/c/bin/../lib/gcc/i686-w64-mingw32/4.9.2/../../../../lib] ==> [C:/Strawberry/c/lib]
+        collapse library dir [C:/Strawberry/c/bin/../lib/gcc/i686-w64-mingw32/4.9.2/../../../../i686-w64-mingw32/lib] ==> [C:/Strawberry/c/i686-w64-mingw32/lib]
+        collapse library dir [C:/Strawberry/c/bin/../lib/gcc/i686-w64-mingw32/4.9.2/../../..] ==> [C:/Strawberry/c/lib]
+        implicit libs: [mingw32;gcc;moldname;mingwex;pthread;advapi32;shell32;user32;kernel32;iconv;mingw32;gcc;moldname;mingwex]
+        implicit objs: [C:/Strawberry/c/i686-w64-mingw32/lib/crt2.o;C:/Strawberry/c/lib/gcc/i686-w64-mingw32/4.9.2/crtbegin.o;C:/Strawberry/c/lib/gcc/i686-w64-mingw32/4.9.2/crtend.o]
+        implicit dirs: [C:/Strawberry/c/lib/gcc/i686-w64-mingw32/4.9.2;C:/Strawberry/c/lib/gcc;C:/Strawberry/c/i686-w64-mingw32/lib;C:/Strawberry/c/lib]
+        implicit fwks: []
+      
+      
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-3.28/Modules/CMakeDetermineCompilerABI.cmake:57 (try_compile)"
+      - "C:/Program Files/CMake/share/cmake-3.28/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:2 (project)"
+    checks:
+      - "Detecting CXX compiler ABI info"
+    directories:
+      source: "E:/Lectures/23F-Compilation-principle/LexicalSyntacticAnalyzer/build/CMakeFiles/CMakeScratch/TryCompile-1zhq48"
+      binary: "E:/Lectures/23F-Compilation-principle/LexicalSyntacticAnalyzer/build/CMakeFiles/CMakeScratch/TryCompile-1zhq48"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+    buildResult:
+      variable: "CMAKE_CXX_ABI_COMPILED"
+      cached: true
+      stdout: |
+        Change Dir: 'E:/Lectures/23F-Compilation-principle/LexicalSyntacticAnalyzer/build/CMakeFiles/CMakeScratch/TryCompile-1zhq48'
+        
+        Run Build Command(s): "C:/Program Files/CMake/bin/cmake.exe" -E env VERBOSE=1 C:/mingw64/bin/mingw32-make.exe -f Makefile cmTC_51af3/fast
+        C:/mingw64/bin/mingw32-make.exe  -f CMakeFiles\\cmTC_51af3.dir\\build.make CMakeFiles/cmTC_51af3.dir/build
+        mingw32-make.exe[1]: Entering directory 'E:/Lectures/23F-Compilation-principle/LexicalSyntacticAnalyzer/build/CMakeFiles/CMakeScratch/TryCompile-1zhq48'
+        Building CXX object CMakeFiles/cmTC_51af3.dir/CMakeCXXCompilerABI.cpp.obj
+        C:\\Strawberry\\c\\bin\\c++.exe   -v -o CMakeFiles\\cmTC_51af3.dir\\CMakeCXXCompilerABI.cpp.obj -c "C:\\Program Files\\CMake\\share\\cmake-3.28\\Modules\\CMakeCXXCompilerABI.cpp"
+        Using built-in specs.
+        COLLECT_GCC=C:\\Strawberry\\c\\bin\\c++.exe
+        Target: i686-w64-mingw32
+        Configured with: ../../../src/gcc-4.9.2/configure --host=i686-w64-mingw32 --build=i686-w64-mingw32 --target=i686-w64-mingw32 --prefix=/mingw32 --with-gxx-include-dir=/mingw32/i686-w64-mingw32/include/c++ --enable-shared --enable-static --disable-multilib --enable-languages=c,c++,fortran,lto --enable-libstdcxx-time=yes --enable-threads=posix --enable-libgomp --enable-libatomic --enable-lto --enable-graphite --enable-checking=release --enable-fully-dynamic-string --enable-version-specific-runtime-libs --enable-sjlj-exceptions --disable-isl-version-check --disable-cloog-version-check --disable-libstdcxx-pch --disable-libstdcxx-debug --disable-bootstrap --disable-rpath --disable-win32-registry --disable-nls --disable-werror --disable-symvers --with-gnu-as --with-gnu-ld --with-arch=i686 --with-tune=generic --with-libiconv --with-system-zlib --with-gmp=/opt/build/prerequisites/i686-w64-mingw32-static --with-mpfr=/opt/build/prerequisites/i686-w64-mingw32-static --with-mpc=/opt/build/prerequisites/i686-w64-mingw32-static --with-isl=/opt/build/prerequisites/i686-w64-mingw32-static --with-cloog=/opt/build/prerequisites/i686-w64-mingw32-static --enable-cloog-backend=isl --with-pkgversion='i686-posix-sjlj, built by strawberryperl.com project' CFLAGS='-O2 -pipe -I/opt/build/i686-492-posix-sjlj-rt_v402/mingw32/opt/include -I/opt/build/prerequisites/i686-zlib-static/include -I/opt/build/prerequisites/i686-w64-mingw32-static/include' CXXFLAGS='-O2 -pipe -I/opt/build/i686-492-posix-sjlj-rt_v402/mingw32/opt/include -I/opt/build/prerequisites/i686-zlib-static/include -I/opt/build/prerequisites/i686-w64-mingw32-static/include' CPPFLAGS= LDFLAGS='-pipe -L/opt/build/i686-492-posix-sjlj-rt_v402/mingw32/opt/lib -L/opt/build/prerequisites/i686-zlib-static/lib -L/opt/build/prerequisites/i686-w64-mingw32-static/lib -Wl,--large-address-aware'
+        Thread model: posix
+        gcc version 4.9.2 (i686-posix-sjlj, built by strawberryperl.com project) 
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles\\cmTC_51af3.dir\\CMakeCXXCompilerABI.cpp.obj' '-c' '-shared-libgcc' '-mtune=generic' '-march=i686'
+         C:/Strawberry/c/bin/../libexec/gcc/i686-w64-mingw32/4.9.2/cc1plus.exe -quiet -v -iprefix C:/Strawberry/c/bin/../lib/gcc/i686-w64-mingw32/4.9.2/ -D_REENTRANT C:\\Program Files\\CMake\\share\\cmake-3.28\\Modules\\CMakeCXXCompilerABI.cpp -quiet -dumpbase CMakeCXXCompilerABI.cpp -mtune=generic -march=i686 -auxbase-strip CMakeFiles\\cmTC_51af3.dir\\CMakeCXXCompilerABI.cpp.obj -version -o C:\\Users\\HZH\\AppData\\Local\\Temp\\cczr7Kyn.s
+        GNU C++ (i686-posix-sjlj, built by strawberryperl.com project) version 4.9.2 (i686-w64-mingw32)
+        	compiled by GNU C version 4.8.4, GMP version 6.0.0, MPFR version 3.1.2-p9, MPC version 1.0.2
+        warning: MPFR header version 3.1.2-p9 differs from library version 3.1.2-p10.
+        GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+        ignoring duplicate directory "C:/Strawberry/c/lib/gcc/../../lib/gcc/i686-w64-mingw32/4.9.2/include"
+        ignoring duplicate directory "C:/Strawberry/c/lib/gcc/../../lib/gcc/i686-w64-mingw32/4.9.2/../../../../include"
+        ignoring nonexistent directory "/mingw32/include"
+        ignoring duplicate directory "C:/Strawberry/c/lib/gcc/../../lib/gcc/i686-w64-mingw32/4.9.2/include-fixed"
+        ignoring duplicate directory "C:/Strawberry/c/lib/gcc/../../lib/gcc/i686-w64-mingw32/4.9.2/../../../../i686-w64-mingw32/include"
+        #include "..." search starts here:
+        #include <...> search starts here:
+         C:/Strawberry/c/bin/../lib/gcc/i686-w64-mingw32/4.9.2/include
+         C:/Strawberry/c/bin/../lib/gcc/i686-w64-mingw32/4.9.2/../../../../include
+         C:/Strawberry/c/bin/../lib/gcc/i686-w64-mingw32/4.9.2/include-fixed
+         C:/Strawberry/c/bin/../lib/gcc/i686-w64-mingw32/4.9.2/../../../../i686-w64-mingw32/include
+         C:/Strawberry/c/lib/gcc/../../i686-w64-mingw32/include/c++
+         C:/Strawberry/c/lib/gcc/../../i686-w64-mingw32/include/c++/i686-w64-mingw32
+         C:/Strawberry/c/lib/gcc/../../i686-w64-mingw32/include/c++/backward
+        End of search list.
+        GNU C++ (i686-posix-sjlj, built by strawberryperl.com project) version 4.9.2 (i686-w64-mingw32)
+        	compiled by GNU C version 4.8.4, GMP version 6.0.0, MPFR version 3.1.2-p9, MPC version 1.0.2
+        warning: MPFR header version 3.1.2-p9 differs from library version 3.1.2-p10.
+        GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+        Compiler executable checksum: 7289170f04863212b7baa4a0185cb980
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles\\cmTC_51af3.dir\\CMakeCXXCompilerABI.cpp.obj' '-c' '-shared-libgcc' '-mtune=generic' '-march=i686'
+         C:/Strawberry/c/bin/../lib/gcc/i686-w64-mingw32/4.9.2/../../../../i686-w64-mingw32/bin/as.exe -v -o CMakeFiles\\cmTC_51af3.dir\\CMakeCXXCompilerABI.cpp.obj C:\\Users\\HZH\\AppData\\Local\\Temp\\cczr7Kyn.s
+        GNU assembler version 2.25 (i686-w64-mingw32) using BFD version (GNU Binutils) 2.25
+        COMPILER_PATH=C:/Strawberry/c/bin/../libexec/gcc/i686-w64-mingw32/4.9.2/;C:/Strawberry/c/bin/../libexec/gcc/;C:/Strawberry/c/bin/../lib/gcc/i686-w64-mingw32/4.9.2/../../../../i686-w64-mingw32/bin/
+        LIBRARY_PATH=C:/Strawberry/c/bin/../lib/gcc/i686-w64-mingw32/4.9.2/;C:/Strawberry/c/bin/../lib/gcc/;C:/Strawberry/c/bin/../lib/gcc/i686-w64-mingw32/4.9.2/../../../../i686-w64-mingw32/lib/../lib/;C:/Strawberry/c/bin/../lib/gcc/i686-w64-mingw32/4.9.2/../../../../lib/;C:/Strawberry/c/bin/../lib/gcc/i686-w64-mingw32/4.9.2/../../../../i686-w64-mingw32/lib/;C:/Strawberry/c/bin/../lib/gcc/i686-w64-mingw32/4.9.2/../../../
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles\\cmTC_51af3.dir\\CMakeCXXCompilerABI.cpp.obj' '-c' '-shared-libgcc' '-mtune=generic' '-march=i686'
+        Linking CXX executable cmTC_51af3.exe
+        "C:\\Program Files\\CMake\\bin\\cmake.exe" -E cmake_link_script CMakeFiles\\cmTC_51af3.dir\\link.txt --verbose=1
+        "C:\\Program Files\\CMake\\bin\\cmake.exe" -E rm -f CMakeFiles\\cmTC_51af3.dir/objects.a
+        C:\\Strawberry\\c\\bin\\ar.exe qc CMakeFiles\\cmTC_51af3.dir/objects.a @CMakeFiles\\cmTC_51af3.dir\\objects1.rsp
+        C:\\Strawberry\\c\\bin\\c++.exe  -v -Wl,--whole-archive CMakeFiles\\cmTC_51af3.dir/objects.a -Wl,--no-whole-archive -o cmTC_51af3.exe -Wl,--out-implib,libcmTC_51af3.dll.a -Wl,--major-image-version,0,--minor-image-version,0 
+        Using built-in specs.
+        COLLECT_GCC=C:\\Strawberry\\c\\bin\\c++.exe
+        COLLECT_LTO_WRAPPER=C:/Strawberry/c/bin/../libexec/gcc/i686-w64-mingw32/4.9.2/lto-wrapper.exe
+        Target: i686-w64-mingw32
+        Configured with: ../../../src/gcc-4.9.2/configure --host=i686-w64-mingw32 --build=i686-w64-mingw32 --target=i686-w64-mingw32 --prefix=/mingw32 --with-gxx-include-dir=/mingw32/i686-w64-mingw32/include/c++ --enable-shared --enable-static --disable-multilib --enable-languages=c,c++,fortran,lto --enable-libstdcxx-time=yes --enable-threads=posix --enable-libgomp --enable-libatomic --enable-lto --enable-graphite --enable-checking=release --enable-fully-dynamic-string --enable-version-specific-runtime-libs --enable-sjlj-exceptions --disable-isl-version-check --disable-cloog-version-check --disable-libstdcxx-pch --disable-libstdcxx-debug --disable-bootstrap --disable-rpath --disable-win32-registry --disable-nls --disable-werror --disable-symvers --with-gnu-as --with-gnu-ld --with-arch=i686 --with-tune=generic --with-libiconv --with-system-zlib --with-gmp=/opt/build/prerequisites/i686-w64-mingw32-static --with-mpfr=/opt/build/prerequisites/i686-w64-mingw32-static --with-mpc=/opt/build/prerequisites/i686-w64-mingw32-static --with-isl=/opt/build/prerequisites/i686-w64-mingw32-static --with-cloog=/opt/build/prerequisites/i686-w64-mingw32-static --enable-cloog-backend=isl --with-pkgversion='i686-posix-sjlj, built by strawberryperl.com project' CFLAGS='-O2 -pipe -I/opt/build/i686-492-posix-sjlj-rt_v402/mingw32/opt/include -I/opt/build/prerequisites/i686-zlib-static/include -I/opt/build/prerequisites/i686-w64-mingw32-static/include' CXXFLAGS='-O2 -pipe -I/opt/build/i686-492-posix-sjlj-rt_v402/mingw32/opt/include -I/opt/build/prerequisites/i686-zlib-static/include -I/opt/build/prerequisites/i686-w64-mingw32-static/include' CPPFLAGS= LDFLAGS='-pipe -L/opt/build/i686-492-posix-sjlj-rt_v402/mingw32/opt/lib -L/opt/build/prerequisites/i686-zlib-static/lib -L/opt/build/prerequisites/i686-w64-mingw32-static/lib -Wl,--large-address-aware'
+        Thread model: posix
+        gcc version 4.9.2 (i686-posix-sjlj, built by strawberryperl.com project) 
+        COMPILER_PATH=C:/Strawberry/c/bin/../libexec/gcc/i686-w64-mingw32/4.9.2/;C:/Strawberry/c/bin/../libexec/gcc/;C:/Strawberry/c/bin/../lib/gcc/i686-w64-mingw32/4.9.2/../../../../i686-w64-mingw32/bin/
+        LIBRARY_PATH=C:/Strawberry/c/bin/../lib/gcc/i686-w64-mingw32/4.9.2/;C:/Strawberry/c/bin/../lib/gcc/;C:/Strawberry/c/bin/../lib/gcc/i686-w64-mingw32/4.9.2/../../../../i686-w64-mingw32/lib/../lib/;C:/Strawberry/c/bin/../lib/gcc/i686-w64-mingw32/4.9.2/../../../../lib/;C:/Strawberry/c/bin/../lib/gcc/i686-w64-mingw32/4.9.2/../../../../i686-w64-mingw32/lib/;C:/Strawberry/c/bin/../lib/gcc/i686-w64-mingw32/4.9.2/../../../
+        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_51af3.exe' '-shared-libgcc' '-mtune=generic' '-march=i686'
+         C:/Strawberry/c/bin/../libexec/gcc/i686-w64-mingw32/4.9.2/collect2.exe -plugin C:/Strawberry/c/bin/../libexec/gcc/i686-w64-mingw32/4.9.2/liblto_plugin-0.dll -plugin-opt=C:/Strawberry/c/bin/../libexec/gcc/i686-w64-mingw32/4.9.2/lto-wrapper.exe -plugin-opt=-fresolution=C:\\Users\\HZH\\AppData\\Local\\Temp\\ccxQYKPD.res -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lmoldname -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-lpthread -plugin-opt=-pass-through=-ladvapi32 -plugin-opt=-pass-through=-lshell32 -plugin-opt=-pass-through=-luser32 -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-liconv -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lmoldname -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -m i386pe -Bdynamic -o cmTC_51af3.exe C:/Strawberry/c/bin/../lib/gcc/i686-w64-mingw32/4.9.2/../../../../i686-w64-mingw32/lib/../lib/crt2.o C:/Strawberry/c/bin/../lib/gcc/i686-w64-mingw32/4.9.2/crtbegin.o -LC:/Strawberry/c/bin/../lib/gcc/i686-w64-mingw32/4.9.2 -LC:/Strawberry/c/bin/../lib/gcc -LC:/Strawberry/c/bin/../lib/gcc/i686-w64-mingw32/4.9.2/../../../../i686-w64-mingw32/lib/../lib -LC:/Strawberry/c/bin/../lib/gcc/i686-w64-mingw32/4.9.2/../../../../lib -LC:/Strawberry/c/bin/../lib/gcc/i686-w64-mingw32/4.9.2/../../../../i686-w64-mingw32/lib -LC:/Strawberry/c/bin/../lib/gcc/i686-w64-mingw32/4.9.2/../../.. --whole-archive CMakeFiles\\cmTC_51af3.dir/objects.a --no-whole-archive --out-implib libcmTC_51af3.dll.a --major-image-version 0 --minor-image-version 0 -lstdc++ -lmingw32 -lgcc_s -lgcc -lmoldname -lmingwex -lmsvcrt -lpthread -ladvapi32 -lshell32 -luser32 -lkernel32 -liconv -lmingw32 -lgcc_s -lgcc -lmoldname -lmingwex -lmsvcrt C:/Strawberry/c/bin/../lib/gcc/i686-w64-mingw32/4.9.2/crtend.o
+        mingw32-make.exe[1]: Leaving directory 'E:/Lectures/23F-Compilation-principle/LexicalSyntacticAnalyzer/build/CMakeFiles/CMakeScratch/TryCompile-1zhq48'
+        
+      exitCode: 0
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-3.28/Modules/CMakeDetermineCompilerABI.cmake:127 (message)"
+      - "C:/Program Files/CMake/share/cmake-3.28/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      Parsed CXX implicit include dir info: rv=done
+        found start of include info
+        found start of implicit include info
+          add: [C:/Strawberry/c/bin/../lib/gcc/i686-w64-mingw32/4.9.2/include]
+          add: [C:/Strawberry/c/bin/../lib/gcc/i686-w64-mingw32/4.9.2/../../../../include]
+          add: [C:/Strawberry/c/bin/../lib/gcc/i686-w64-mingw32/4.9.2/include-fixed]
+          add: [C:/Strawberry/c/bin/../lib/gcc/i686-w64-mingw32/4.9.2/../../../../i686-w64-mingw32/include]
+          add: [C:/Strawberry/c/lib/gcc/../../i686-w64-mingw32/include/c++]
+          add: [C:/Strawberry/c/lib/gcc/../../i686-w64-mingw32/include/c++/i686-w64-mingw32]
+          add: [C:/Strawberry/c/lib/gcc/../../i686-w64-mingw32/include/c++/backward]
+        end of search list found
+        collapse include dir [C:/Strawberry/c/bin/../lib/gcc/i686-w64-mingw32/4.9.2/include] ==> [C:/Strawberry/c/lib/gcc/i686-w64-mingw32/4.9.2/include]
+        collapse include dir [C:/Strawberry/c/bin/../lib/gcc/i686-w64-mingw32/4.9.2/../../../../include] ==> [C:/Strawberry/c/include]
+        collapse include dir [C:/Strawberry/c/bin/../lib/gcc/i686-w64-mingw32/4.9.2/include-fixed] ==> [C:/Strawberry/c/lib/gcc/i686-w64-mingw32/4.9.2/include-fixed]
+        collapse include dir [C:/Strawberry/c/bin/../lib/gcc/i686-w64-mingw32/4.9.2/../../../../i686-w64-mingw32/include] ==> [C:/Strawberry/c/i686-w64-mingw32/include]
+        collapse include dir [C:/Strawberry/c/lib/gcc/../../i686-w64-mingw32/include/c++] ==> [C:/Strawberry/c/i686-w64-mingw32/include/c++]
+        collapse include dir [C:/Strawberry/c/lib/gcc/../../i686-w64-mingw32/include/c++/i686-w64-mingw32] ==> [C:/Strawberry/c/i686-w64-mingw32/include/c++/i686-w64-mingw32]
+        collapse include dir [C:/Strawberry/c/lib/gcc/../../i686-w64-mingw32/include/c++/backward] ==> [C:/Strawberry/c/i686-w64-mingw32/include/c++/backward]
+        implicit include dirs: [C:/Strawberry/c/lib/gcc/i686-w64-mingw32/4.9.2/include;C:/Strawberry/c/include;C:/Strawberry/c/lib/gcc/i686-w64-mingw32/4.9.2/include-fixed;C:/Strawberry/c/i686-w64-mingw32/include;C:/Strawberry/c/i686-w64-mingw32/include/c++;C:/Strawberry/c/i686-w64-mingw32/include/c++/i686-w64-mingw32;C:/Strawberry/c/i686-w64-mingw32/include/c++/backward]
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-3.28/Modules/CMakeDetermineCompilerABI.cmake:159 (message)"
+      - "C:/Program Files/CMake/share/cmake-3.28/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      Parsed CXX implicit link information:
+        link line regex: [^( *|.*[/\\])(ld\\.exe|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
+        ignore line: [Change Dir: 'E:/Lectures/23F-Compilation-principle/LexicalSyntacticAnalyzer/build/CMakeFiles/CMakeScratch/TryCompile-1zhq48']
+        ignore line: []
+        ignore line: [Run Build Command(s): "C:/Program Files/CMake/bin/cmake.exe" -E env VERBOSE=1 C:/mingw64/bin/mingw32-make.exe -f Makefile cmTC_51af3/fast]
+        ignore line: [C:/mingw64/bin/mingw32-make.exe  -f CMakeFiles\\cmTC_51af3.dir\\build.make CMakeFiles/cmTC_51af3.dir/build]
+        ignore line: [mingw32-make.exe[1]: Entering directory 'E:/Lectures/23F-Compilation-principle/LexicalSyntacticAnalyzer/build/CMakeFiles/CMakeScratch/TryCompile-1zhq48']
+        ignore line: [Building CXX object CMakeFiles/cmTC_51af3.dir/CMakeCXXCompilerABI.cpp.obj]
+        ignore line: [C:\\Strawberry\\c\\bin\\c++.exe   -v -o CMakeFiles\\cmTC_51af3.dir\\CMakeCXXCompilerABI.cpp.obj -c "C:\\Program Files\\CMake\\share\\cmake-3.28\\Modules\\CMakeCXXCompilerABI.cpp"]
+        ignore line: [Using built-in specs.]
+        ignore line: [COLLECT_GCC=C:\\Strawberry\\c\\bin\\c++.exe]
+        ignore line: [Target: i686-w64-mingw32]
+        ignore line: [Configured with: ../../../src/gcc-4.9.2/configure --host=i686-w64-mingw32 --build=i686-w64-mingw32 --target=i686-w64-mingw32 --prefix=/mingw32 --with-gxx-include-dir=/mingw32/i686-w64-mingw32/include/c++ --enable-shared --enable-static --disable-multilib --enable-languages=c,c++,fortran,lto --enable-libstdcxx-time=yes --enable-threads=posix --enable-libgomp --enable-libatomic --enable-lto --enable-graphite --enable-checking=release --enable-fully-dynamic-string --enable-version-specific-runtime-libs --enable-sjlj-exceptions --disable-isl-version-check --disable-cloog-version-check --disable-libstdcxx-pch --disable-libstdcxx-debug --disable-bootstrap --disable-rpath --disable-win32-registry --disable-nls --disable-werror --disable-symvers --with-gnu-as --with-gnu-ld --with-arch=i686 --with-tune=generic --with-libiconv --with-system-zlib --with-gmp=/opt/build/prerequisites/i686-w64-mingw32-static --with-mpfr=/opt/build/prerequisites/i686-w64-mingw32-static --with-mpc=/opt/build/prerequisites/i686-w64-mingw32-static --with-isl=/opt/build/prerequisites/i686-w64-mingw32-static --with-cloog=/opt/build/prerequisites/i686-w64-mingw32-static --enable-cloog-backend=isl --with-pkgversion='i686-posix-sjlj, built by strawberryperl.com project' CFLAGS='-O2 -pipe -I/opt/build/i686-492-posix-sjlj-rt_v402/mingw32/opt/include -I/opt/build/prerequisites/i686-zlib-static/include -I/opt/build/prerequisites/i686-w64-mingw32-static/include' CXXFLAGS='-O2 -pipe -I/opt/build/i686-492-posix-sjlj-rt_v402/mingw32/opt/include -I/opt/build/prerequisites/i686-zlib-static/include -I/opt/build/prerequisites/i686-w64-mingw32-static/include' CPPFLAGS= LDFLAGS='-pipe -L/opt/build/i686-492-posix-sjlj-rt_v402/mingw32/opt/lib -L/opt/build/prerequisites/i686-zlib-static/lib -L/opt/build/prerequisites/i686-w64-mingw32-static/lib -Wl,--large-address-aware']
+        ignore line: [Thread model: posix]
+        ignore line: [gcc version 4.9.2 (i686-posix-sjlj  built by strawberryperl.com project) ]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles\\cmTC_51af3.dir\\CMakeCXXCompilerABI.cpp.obj' '-c' '-shared-libgcc' '-mtune=generic' '-march=i686']
+        ignore line: [ C:/Strawberry/c/bin/../libexec/gcc/i686-w64-mingw32/4.9.2/cc1plus.exe -quiet -v -iprefix C:/Strawberry/c/bin/../lib/gcc/i686-w64-mingw32/4.9.2/ -D_REENTRANT C:\\Program Files\\CMake\\share\\cmake-3.28\\Modules\\CMakeCXXCompilerABI.cpp -quiet -dumpbase CMakeCXXCompilerABI.cpp -mtune=generic -march=i686 -auxbase-strip CMakeFiles\\cmTC_51af3.dir\\CMakeCXXCompilerABI.cpp.obj -version -o C:\\Users\\HZH\\AppData\\Local\\Temp\\cczr7Kyn.s]
+        ignore line: [GNU C++ (i686-posix-sjlj  built by strawberryperl.com project) version 4.9.2 (i686-w64-mingw32)]
+        ignore line: [	compiled by GNU C version 4.8.4  GMP version 6.0.0  MPFR version 3.1.2-p9  MPC version 1.0.2]
+        ignore line: [warning: MPFR header version 3.1.2-p9 differs from library version 3.1.2-p10.]
+        ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
+        ignore line: [ignoring duplicate directory "C:/Strawberry/c/lib/gcc/../../lib/gcc/i686-w64-mingw32/4.9.2/include"]
+        ignore line: [ignoring duplicate directory "C:/Strawberry/c/lib/gcc/../../lib/gcc/i686-w64-mingw32/4.9.2/../../../../include"]
+        ignore line: [ignoring nonexistent directory "/mingw32/include"]
+        ignore line: [ignoring duplicate directory "C:/Strawberry/c/lib/gcc/../../lib/gcc/i686-w64-mingw32/4.9.2/include-fixed"]
+        ignore line: [ignoring duplicate directory "C:/Strawberry/c/lib/gcc/../../lib/gcc/i686-w64-mingw32/4.9.2/../../../../i686-w64-mingw32/include"]
+        ignore line: [#include "..." search starts here:]
+        ignore line: [#include <...> search starts here:]
+        ignore line: [ C:/Strawberry/c/bin/../lib/gcc/i686-w64-mingw32/4.9.2/include]
+        ignore line: [ C:/Strawberry/c/bin/../lib/gcc/i686-w64-mingw32/4.9.2/../../../../include]
+        ignore line: [ C:/Strawberry/c/bin/../lib/gcc/i686-w64-mingw32/4.9.2/include-fixed]
+        ignore line: [ C:/Strawberry/c/bin/../lib/gcc/i686-w64-mingw32/4.9.2/../../../../i686-w64-mingw32/include]
+        ignore line: [ C:/Strawberry/c/lib/gcc/../../i686-w64-mingw32/include/c++]
+        ignore line: [ C:/Strawberry/c/lib/gcc/../../i686-w64-mingw32/include/c++/i686-w64-mingw32]
+        ignore line: [ C:/Strawberry/c/lib/gcc/../../i686-w64-mingw32/include/c++/backward]
+        ignore line: [End of search list.]
+        ignore line: [GNU C++ (i686-posix-sjlj  built by strawberryperl.com project) version 4.9.2 (i686-w64-mingw32)]
+        ignore line: [	compiled by GNU C version 4.8.4  GMP version 6.0.0  MPFR version 3.1.2-p9  MPC version 1.0.2]
+        ignore line: [warning: MPFR header version 3.1.2-p9 differs from library version 3.1.2-p10.]
+        ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
+        ignore line: [Compiler executable checksum: 7289170f04863212b7baa4a0185cb980]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles\\cmTC_51af3.dir\\CMakeCXXCompilerABI.cpp.obj' '-c' '-shared-libgcc' '-mtune=generic' '-march=i686']
+        ignore line: [ C:/Strawberry/c/bin/../lib/gcc/i686-w64-mingw32/4.9.2/../../../../i686-w64-mingw32/bin/as.exe -v -o CMakeFiles\\cmTC_51af3.dir\\CMakeCXXCompilerABI.cpp.obj C:\\Users\\HZH\\AppData\\Local\\Temp\\cczr7Kyn.s]
+        ignore line: [GNU assembler version 2.25 (i686-w64-mingw32) using BFD version (GNU Binutils) 2.25]
+        ignore line: [COMPILER_PATH=C:/Strawberry/c/bin/../libexec/gcc/i686-w64-mingw32/4.9.2/]
+        ignore line: [C:/Strawberry/c/bin/../libexec/gcc/]
+        ignore line: [C:/Strawberry/c/bin/../lib/gcc/i686-w64-mingw32/4.9.2/../../../../i686-w64-mingw32/bin/]
+        ignore line: [LIBRARY_PATH=C:/Strawberry/c/bin/../lib/gcc/i686-w64-mingw32/4.9.2/]
+        ignore line: [C:/Strawberry/c/bin/../lib/gcc/]
+        ignore line: [C:/Strawberry/c/bin/../lib/gcc/i686-w64-mingw32/4.9.2/../../../../i686-w64-mingw32/lib/../lib/]
+        ignore line: [C:/Strawberry/c/bin/../lib/gcc/i686-w64-mingw32/4.9.2/../../../../lib/]
+        ignore line: [C:/Strawberry/c/bin/../lib/gcc/i686-w64-mingw32/4.9.2/../../../../i686-w64-mingw32/lib/]
+        ignore line: [C:/Strawberry/c/bin/../lib/gcc/i686-w64-mingw32/4.9.2/../../../]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles\\cmTC_51af3.dir\\CMakeCXXCompilerABI.cpp.obj' '-c' '-shared-libgcc' '-mtune=generic' '-march=i686']
+        ignore line: [Linking CXX executable cmTC_51af3.exe]
+        ignore line: ["C:\\Program Files\\CMake\\bin\\cmake.exe" -E cmake_link_script CMakeFiles\\cmTC_51af3.dir\\link.txt --verbose=1]
+        ignore line: ["C:\\Program Files\\CMake\\bin\\cmake.exe" -E rm -f CMakeFiles\\cmTC_51af3.dir/objects.a]
+        ignore line: [C:\\Strawberry\\c\\bin\\ar.exe qc CMakeFiles\\cmTC_51af3.dir/objects.a @CMakeFiles\\cmTC_51af3.dir\\objects1.rsp]
+        ignore line: [C:\\Strawberry\\c\\bin\\c++.exe  -v -Wl --whole-archive CMakeFiles\\cmTC_51af3.dir/objects.a -Wl --no-whole-archive -o cmTC_51af3.exe -Wl --out-implib libcmTC_51af3.dll.a -Wl --major-image-version 0 --minor-image-version 0 ]
+        ignore line: [Using built-in specs.]
+        ignore line: [COLLECT_GCC=C:\\Strawberry\\c\\bin\\c++.exe]
+        ignore line: [COLLECT_LTO_WRAPPER=C:/Strawberry/c/bin/../libexec/gcc/i686-w64-mingw32/4.9.2/lto-wrapper.exe]
+        ignore line: [Target: i686-w64-mingw32]
+        ignore line: [Configured with: ../../../src/gcc-4.9.2/configure --host=i686-w64-mingw32 --build=i686-w64-mingw32 --target=i686-w64-mingw32 --prefix=/mingw32 --with-gxx-include-dir=/mingw32/i686-w64-mingw32/include/c++ --enable-shared --enable-static --disable-multilib --enable-languages=c,c++,fortran,lto --enable-libstdcxx-time=yes --enable-threads=posix --enable-libgomp --enable-libatomic --enable-lto --enable-graphite --enable-checking=release --enable-fully-dynamic-string --enable-version-specific-runtime-libs --enable-sjlj-exceptions --disable-isl-version-check --disable-cloog-version-check --disable-libstdcxx-pch --disable-libstdcxx-debug --disable-bootstrap --disable-rpath --disable-win32-registry --disable-nls --disable-werror --disable-symvers --with-gnu-as --with-gnu-ld --with-arch=i686 --with-tune=generic --with-libiconv --with-system-zlib --with-gmp=/opt/build/prerequisites/i686-w64-mingw32-static --with-mpfr=/opt/build/prerequisites/i686-w64-mingw32-static --with-mpc=/opt/build/prerequisites/i686-w64-mingw32-static --with-isl=/opt/build/prerequisites/i686-w64-mingw32-static --with-cloog=/opt/build/prerequisites/i686-w64-mingw32-static --enable-cloog-backend=isl --with-pkgversion='i686-posix-sjlj, built by strawberryperl.com project' CFLAGS='-O2 -pipe -I/opt/build/i686-492-posix-sjlj-rt_v402/mingw32/opt/include -I/opt/build/prerequisites/i686-zlib-static/include -I/opt/build/prerequisites/i686-w64-mingw32-static/include' CXXFLAGS='-O2 -pipe -I/opt/build/i686-492-posix-sjlj-rt_v402/mingw32/opt/include -I/opt/build/prerequisites/i686-zlib-static/include -I/opt/build/prerequisites/i686-w64-mingw32-static/include' CPPFLAGS= LDFLAGS='-pipe -L/opt/build/i686-492-posix-sjlj-rt_v402/mingw32/opt/lib -L/opt/build/prerequisites/i686-zlib-static/lib -L/opt/build/prerequisites/i686-w64-mingw32-static/lib -Wl,--large-address-aware']
+        ignore line: [Thread model: posix]
+        ignore line: [gcc version 4.9.2 (i686-posix-sjlj  built by strawberryperl.com project) ]
+        ignore line: [COMPILER_PATH=C:/Strawberry/c/bin/../libexec/gcc/i686-w64-mingw32/4.9.2/]
+        ignore line: [C:/Strawberry/c/bin/../libexec/gcc/]
+        ignore line: [C:/Strawberry/c/bin/../lib/gcc/i686-w64-mingw32/4.9.2/../../../../i686-w64-mingw32/bin/]
+        ignore line: [LIBRARY_PATH=C:/Strawberry/c/bin/../lib/gcc/i686-w64-mingw32/4.9.2/]
+        ignore line: [C:/Strawberry/c/bin/../lib/gcc/]
+        ignore line: [C:/Strawberry/c/bin/../lib/gcc/i686-w64-mingw32/4.9.2/../../../../i686-w64-mingw32/lib/../lib/]
+        ignore line: [C:/Strawberry/c/bin/../lib/gcc/i686-w64-mingw32/4.9.2/../../../../lib/]
+        ignore line: [C:/Strawberry/c/bin/../lib/gcc/i686-w64-mingw32/4.9.2/../../../../i686-w64-mingw32/lib/]
+        ignore line: [C:/Strawberry/c/bin/../lib/gcc/i686-w64-mingw32/4.9.2/../../../]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_51af3.exe' '-shared-libgcc' '-mtune=generic' '-march=i686']
+        link line: [ C:/Strawberry/c/bin/../libexec/gcc/i686-w64-mingw32/4.9.2/collect2.exe -plugin C:/Strawberry/c/bin/../libexec/gcc/i686-w64-mingw32/4.9.2/liblto_plugin-0.dll -plugin-opt=C:/Strawberry/c/bin/../libexec/gcc/i686-w64-mingw32/4.9.2/lto-wrapper.exe -plugin-opt=-fresolution=C:\\Users\\HZH\\AppData\\Local\\Temp\\ccxQYKPD.res -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lmoldname -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-lpthread -plugin-opt=-pass-through=-ladvapi32 -plugin-opt=-pass-through=-lshell32 -plugin-opt=-pass-through=-luser32 -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-liconv -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lmoldname -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -m i386pe -Bdynamic -o cmTC_51af3.exe C:/Strawberry/c/bin/../lib/gcc/i686-w64-mingw32/4.9.2/../../../../i686-w64-mingw32/lib/../lib/crt2.o C:/Strawberry/c/bin/../lib/gcc/i686-w64-mingw32/4.9.2/crtbegin.o -LC:/Strawberry/c/bin/../lib/gcc/i686-w64-mingw32/4.9.2 -LC:/Strawberry/c/bin/../lib/gcc -LC:/Strawberry/c/bin/../lib/gcc/i686-w64-mingw32/4.9.2/../../../../i686-w64-mingw32/lib/../lib -LC:/Strawberry/c/bin/../lib/gcc/i686-w64-mingw32/4.9.2/../../../../lib -LC:/Strawberry/c/bin/../lib/gcc/i686-w64-mingw32/4.9.2/../../../../i686-w64-mingw32/lib -LC:/Strawberry/c/bin/../lib/gcc/i686-w64-mingw32/4.9.2/../../.. --whole-archive CMakeFiles\\cmTC_51af3.dir/objects.a --no-whole-archive --out-implib libcmTC_51af3.dll.a --major-image-version 0 --minor-image-version 0 -lstdc++ -lmingw32 -lgcc_s -lgcc -lmoldname -lmingwex -lmsvcrt -lpthread -ladvapi32 -lshell32 -luser32 -lkernel32 -liconv -lmingw32 -lgcc_s -lgcc -lmoldname -lmingwex -lmsvcrt C:/Strawberry/c/bin/../lib/gcc/i686-w64-mingw32/4.9.2/crtend.o]
+          arg [C:/Strawberry/c/bin/../libexec/gcc/i686-w64-mingw32/4.9.2/collect2.exe] ==> ignore
+          arg [-plugin] ==> ignore
+          arg [C:/Strawberry/c/bin/../libexec/gcc/i686-w64-mingw32/4.9.2/liblto_plugin-0.dll] ==> ignore
+          arg [-plugin-opt=C:/Strawberry/c/bin/../libexec/gcc/i686-w64-mingw32/4.9.2/lto-wrapper.exe] ==> ignore
+          arg [-plugin-opt=-fresolution=C:\\Users\\HZH\\AppData\\Local\\Temp\\ccxQYKPD.res] ==> ignore
+          arg [-plugin-opt=-pass-through=-lmingw32] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+          arg [-plugin-opt=-pass-through=-lmoldname] ==> ignore
+          arg [-plugin-opt=-pass-through=-lmingwex] ==> ignore
+          arg [-plugin-opt=-pass-through=-lmsvcrt] ==> ignore
+          arg [-plugin-opt=-pass-through=-lpthread] ==> ignore
+          arg [-plugin-opt=-pass-through=-ladvapi32] ==> ignore
+          arg [-plugin-opt=-pass-through=-lshell32] ==> ignore
+          arg [-plugin-opt=-pass-through=-luser32] ==> ignore
+          arg [-plugin-opt=-pass-through=-lkernel32] ==> ignore
+          arg [-plugin-opt=-pass-through=-liconv] ==> ignore
+          arg [-plugin-opt=-pass-through=-lmingw32] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+          arg [-plugin-opt=-pass-through=-lmoldname] ==> ignore
+          arg [-plugin-opt=-pass-through=-lmingwex] ==> ignore
+          arg [-plugin-opt=-pass-through=-lmsvcrt] ==> ignore
+          arg [-m] ==> ignore
+          arg [i386pe] ==> ignore
+          arg [-Bdynamic] ==> search dynamic
+          arg [-o] ==> ignore
+          arg [cmTC_51af3.exe] ==> ignore
+          arg [C:/Strawberry/c/bin/../lib/gcc/i686-w64-mingw32/4.9.2/../../../../i686-w64-mingw32/lib/../lib/crt2.o] ==> obj [C:/Strawberry/c/bin/../lib/gcc/i686-w64-mingw32/4.9.2/../../../../i686-w64-mingw32/lib/../lib/crt2.o]
+          arg [C:/Strawberry/c/bin/../lib/gcc/i686-w64-mingw32/4.9.2/crtbegin.o] ==> obj [C:/Strawberry/c/bin/../lib/gcc/i686-w64-mingw32/4.9.2/crtbegin.o]
+          arg [-LC:/Strawberry/c/bin/../lib/gcc/i686-w64-mingw32/4.9.2] ==> dir [C:/Strawberry/c/bin/../lib/gcc/i686-w64-mingw32/4.9.2]
+          arg [-LC:/Strawberry/c/bin/../lib/gcc] ==> dir [C:/Strawberry/c/bin/../lib/gcc]
+          arg [-LC:/Strawberry/c/bin/../lib/gcc/i686-w64-mingw32/4.9.2/../../../../i686-w64-mingw32/lib/../lib] ==> dir [C:/Strawberry/c/bin/../lib/gcc/i686-w64-mingw32/4.9.2/../../../../i686-w64-mingw32/lib/../lib]
+          arg [-LC:/Strawberry/c/bin/../lib/gcc/i686-w64-mingw32/4.9.2/../../../../lib] ==> dir [C:/Strawberry/c/bin/../lib/gcc/i686-w64-mingw32/4.9.2/../../../../lib]
+          arg [-LC:/Strawberry/c/bin/../lib/gcc/i686-w64-mingw32/4.9.2/../../../../i686-w64-mingw32/lib] ==> dir [C:/Strawberry/c/bin/../lib/gcc/i686-w64-mingw32/4.9.2/../../../../i686-w64-mingw32/lib]
+          arg [-LC:/Strawberry/c/bin/../lib/gcc/i686-w64-mingw32/4.9.2/../../..] ==> dir [C:/Strawberry/c/bin/../lib/gcc/i686-w64-mingw32/4.9.2/../../..]
+          arg [--whole-archive] ==> ignore
+          arg [CMakeFiles\\cmTC_51af3.dir/objects.a] ==> ignore
+          arg [--no-whole-archive] ==> ignore
+          arg [--out-implib] ==> ignore
+          arg [libcmTC_51af3.dll.a] ==> ignore
+          arg [--major-image-version] ==> ignore
+          arg [0] ==> ignore
+          arg [--minor-image-version] ==> ignore
+          arg [0] ==> ignore
+          arg [-lstdc++] ==> lib [stdc++]
+          arg [-lmingw32] ==> lib [mingw32]
+          arg [-lgcc_s] ==> lib [gcc_s]
+          arg [-lgcc] ==> lib [gcc]
+          arg [-lmoldname] ==> lib [moldname]
+          arg [-lmingwex] ==> lib [mingwex]
+          arg [-lmsvcrt] ==> lib [msvcrt]
+          arg [-lpthread] ==> lib [pthread]
+          arg [-ladvapi32] ==> lib [advapi32]
+          arg [-lshell32] ==> lib [shell32]
+          arg [-luser32] ==> lib [user32]
+          arg [-lkernel32] ==> lib [kernel32]
+          arg [-liconv] ==> lib [iconv]
+          arg [-lmingw32] ==> lib [mingw32]
+          arg [-lgcc_s] ==> lib [gcc_s]
+          arg [-lgcc] ==> lib [gcc]
+          arg [-lmoldname] ==> lib [moldname]
+          arg [-lmingwex] ==> lib [mingwex]
+          arg [-lmsvcrt] ==> lib [msvcrt]
+          arg [C:/Strawberry/c/bin/../lib/gcc/i686-w64-mingw32/4.9.2/crtend.o] ==> obj [C:/Strawberry/c/bin/../lib/gcc/i686-w64-mingw32/4.9.2/crtend.o]
+        remove lib [msvcrt]
+        remove lib [msvcrt]
+        collapse obj [C:/Strawberry/c/bin/../lib/gcc/i686-w64-mingw32/4.9.2/../../../../i686-w64-mingw32/lib/../lib/crt2.o] ==> [C:/Strawberry/c/i686-w64-mingw32/lib/crt2.o]
+        collapse obj [C:/Strawberry/c/bin/../lib/gcc/i686-w64-mingw32/4.9.2/crtbegin.o] ==> [C:/Strawberry/c/lib/gcc/i686-w64-mingw32/4.9.2/crtbegin.o]
+        collapse obj [C:/Strawberry/c/bin/../lib/gcc/i686-w64-mingw32/4.9.2/crtend.o] ==> [C:/Strawberry/c/lib/gcc/i686-w64-mingw32/4.9.2/crtend.o]
+        collapse library dir [C:/Strawberry/c/bin/../lib/gcc/i686-w64-mingw32/4.9.2] ==> [C:/Strawberry/c/lib/gcc/i686-w64-mingw32/4.9.2]
+        collapse library dir [C:/Strawberry/c/bin/../lib/gcc] ==> [C:/Strawberry/c/lib/gcc]
+        collapse library dir [C:/Strawberry/c/bin/../lib/gcc/i686-w64-mingw32/4.9.2/../../../../i686-w64-mingw32/lib/../lib] ==> [C:/Strawberry/c/i686-w64-mingw32/lib]
+        collapse library dir [C:/Strawberry/c/bin/../lib/gcc/i686-w64-mingw32/4.9.2/../../../../lib] ==> [C:/Strawberry/c/lib]
+        collapse library dir [C:/Strawberry/c/bin/../lib/gcc/i686-w64-mingw32/4.9.2/../../../../i686-w64-mingw32/lib] ==> [C:/Strawberry/c/i686-w64-mingw32/lib]
+        collapse library dir [C:/Strawberry/c/bin/../lib/gcc/i686-w64-mingw32/4.9.2/../../..] ==> [C:/Strawberry/c/lib]
+        implicit libs: [stdc++;mingw32;gcc_s;gcc;moldname;mingwex;pthread;advapi32;shell32;user32;kernel32;iconv;mingw32;gcc_s;gcc;moldname;mingwex]
+        implicit objs: [C:/Strawberry/c/i686-w64-mingw32/lib/crt2.o;C:/Strawberry/c/lib/gcc/i686-w64-mingw32/4.9.2/crtbegin.o;C:/Strawberry/c/lib/gcc/i686-w64-mingw32/4.9.2/crtend.o]
+        implicit dirs: [C:/Strawberry/c/lib/gcc/i686-w64-mingw32/4.9.2;C:/Strawberry/c/lib/gcc;C:/Strawberry/c/i686-w64-mingw32/lib;C:/Strawberry/c/lib]
+        implicit fwks: []
+      
+      
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-3.28/Modules/Internal/FeatureTesting.cmake:34 (try_compile)"
+      - "C:/Program Files/CMake/share/cmake-3.28/Modules/Internal/FeatureTesting.cmake:84 (_record_compiler_features)"
+      - "C:/Program Files/CMake/share/cmake-3.28/Modules/Compiler/CMakeCommonCompilerMacros.cmake:121 (_record_compiler_features_cxx)"
+      - "C:/Program Files/CMake/share/cmake-3.28/Modules/CMakeDetermineCompileFeatures.cmake:70 (cmake_record_cxx_compile_features)"
+      - "C:/Program Files/CMake/share/cmake-3.28/Modules/CMakeTestCXXCompiler.cmake:70 (CMAKE_DETERMINE_COMPILE_FEATURES)"
+      - "CMakeLists.txt:2 (project)"
+    checks:
+      - "Detecting CXX compile features"
+    directories:
+      source: "E:/Lectures/23F-Compilation-principle/LexicalSyntacticAnalyzer/build/CMakeFiles/CMakeScratch/TryCompile-dnlw04"
+      binary: "E:/Lectures/23F-Compilation-principle/LexicalSyntacticAnalyzer/build/CMakeFiles/CMakeScratch/TryCompile-dnlw04"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+    buildResult:
+      variable: "CMAKE_CXX_FEATURE_TEST"
+      cached: true
+      stdout: |
+        Change Dir: 'E:/Lectures/23F-Compilation-principle/LexicalSyntacticAnalyzer/build/CMakeFiles/CMakeScratch/TryCompile-dnlw04'
+        
+        Run Build Command(s): "C:/Program Files/CMake/bin/cmake.exe" -E env VERBOSE=1 C:/mingw64/bin/mingw32-make.exe -f Makefile cmTC_bd398/fast
+        C:/mingw64/bin/mingw32-make.exe  -f CMakeFiles\\cmTC_bd398.dir\\build.make CMakeFiles/cmTC_bd398.dir/build
+        mingw32-make.exe[1]: Entering directory 'E:/Lectures/23F-Compilation-principle/LexicalSyntacticAnalyzer/build/CMakeFiles/CMakeScratch/TryCompile-dnlw04'
+        Building CXX object CMakeFiles/cmTC_bd398.dir/feature_tests.cxx.obj
+        C:\\Strawberry\\c\\bin\\c++.exe   -std=c++14 -o CMakeFiles\\cmTC_bd398.dir\\feature_tests.cxx.obj -c E:\\Lectures\\23F-Compilation-principle\\LexicalSyntacticAnalyzer\\build\\CMakeFiles\\CMakeScratch\\TryCompile-dnlw04\\feature_tests.cxx
+        Linking CXX executable cmTC_bd398.exe
+        "C:\\Program Files\\CMake\\bin\\cmake.exe" -E cmake_link_script CMakeFiles\\cmTC_bd398.dir\\link.txt --verbose=1
+        "C:\\Program Files\\CMake\\bin\\cmake.exe" -E rm -f CMakeFiles\\cmTC_bd398.dir/objects.a
+        C:\\Strawberry\\c\\bin\\ar.exe qc CMakeFiles\\cmTC_bd398.dir/objects.a @CMakeFiles\\cmTC_bd398.dir\\objects1.rsp
+        C:\\Strawberry\\c\\bin\\c++.exe -Wl,--whole-archive CMakeFiles\\cmTC_bd398.dir/objects.a -Wl,--no-whole-archive -o cmTC_bd398.exe -Wl,--out-implib,libcmTC_bd398.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\\cmTC_bd398.dir\\linkLibs.rsp
+        mingw32-make.exe[1]: Leaving directory 'E:/Lectures/23F-Compilation-principle/LexicalSyntacticAnalyzer/build/CMakeFiles/CMakeScratch/TryCompile-dnlw04'
+        
+      exitCode: 0
+...
