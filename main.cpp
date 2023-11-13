@@ -2,7 +2,7 @@
 
 #include "lexer.h"
 
-const int version = 6;
+const int version = 7;
 
 int main()
 {

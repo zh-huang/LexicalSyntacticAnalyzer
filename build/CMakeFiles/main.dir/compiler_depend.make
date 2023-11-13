@@ -264,7 +264,6 @@ CMakeFiles/main.dir/main.cpp.obj: E:/Lectures/23F-Compilation-principle/LexicalS
 CMakeFiles/main.dir/utilities.cpp.obj: E:/Lectures/23F-Compilation-principle/LexicalSyntacticAnalyzer/utilities.cpp \
   C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include-fixed/limits.h \
   C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include-fixed/syslimits.h \
-  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/array \
   C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/backward/binders.h \
   C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/alloc_traits.h \
   C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/allocator.h \
@@ -285,9 +284,6 @@ CMakeFiles/main.dir/utilities.cpp.obj: E:/Lectures/23F-Compilation-principle/Lex
   C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/functexcept.h \
   C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/functional_hash.h \
   C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/hash_bytes.h \
-  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/hashtable.h \
-  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/hashtable_policy.h \
-  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/invoke.h \
   C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/ios_base.h \
   C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/istream.tcc \
   C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/locale_classes.h \
@@ -313,14 +309,11 @@ CMakeFiles/main.dir/utilities.cpp.obj: E:/Lectures/23F-Compilation-principle/Lex
   C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/stl_iterator_base_funcs.h \
   C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/stl_iterator_base_types.h \
   C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/stl_pair.h \
-  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/stl_relops.h \
   C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/stl_uninitialized.h \
   C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/stl_vector.h \
   C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/streambuf.tcc \
   C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/streambuf_iterator.h \
   C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/stringfwd.h \
-  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/unordered_set.h \
-  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/uses_allocator.h \
   C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/vector.tcc \
   C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/cctype \
   C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/cerrno \
@@ -333,7 +326,6 @@ CMakeFiles/main.dir/utilities.cpp.obj: E:/Lectures/23F-Compilation-principle/Lex
   C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/debug/assertions.h \
   C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/debug/debug.h \
   C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/exception \
-  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/ext/aligned_buffer.h \
   C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/ext/alloc_traits.h \
   C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/ext/atomicity.h \
   C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/ext/new_allocator.h \
@@ -353,11 +345,8 @@ CMakeFiles/main.dir/utilities.cpp.obj: E:/Lectures/23F-Compilation-principle/Lex
   C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/streambuf \
   C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/string \
   C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/system_error \
-  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/tuple \
   C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/type_traits \
   C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/typeinfo \
-  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/unordered_set \
-  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/utility \
   C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/vector \
   C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/x86_64-w64-mingw32/bits/atomic_word.h \
   C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/x86_64-w64-mingw32/bits/basic_file.h \
@@ -497,8 +486,6 @@ C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/stl_bvector.h:
 
 C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/memoryfwd.h:
 
-C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/tuple:
-
 C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/move.h:
 
 C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/ostream_insert.h:
@@ -581,8 +568,6 @@ C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/streambuf:
 
 C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/system_error:
 
-C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/utility:
-
 C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/type_traits:
 
 C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/typeinfo:
@@ -615,8 +600,6 @@ C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/stddef.h:
 
 C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/stdint.h:
 
-C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/array:
-
 C:/mingw64/x86_64-w64-mingw32/include/_mingw.h:
 
 C:/mingw64/x86_64-w64-mingw32/include/_mingw_mac.h:
@@ -629,17 +612,11 @@ C:/mingw64/x86_64-w64-mingw32/include/_mingw_print_push.h:
 
 C:/mingw64/x86_64-w64-mingw32/include/_mingw_secapi.h:
 
-C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/hashtable_policy.h:
-
 C:/mingw64/x86_64-w64-mingw32/include/_mingw_stat64.h:
-
-C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/unordered_set:
 
 C:/mingw64/x86_64-w64-mingw32/include/ctype.h:
 
 C:/mingw64/x86_64-w64-mingw32/include/errno.h:
-
-C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/stl_relops.h:
 
 C:/mingw64/x86_64-w64-mingw32/include/limits.h:
 
@@ -676,13 +653,3 @@ E:/Lectures/23F-Compilation-principle/LexicalSyntacticAnalyzer/lexer.h:
 E:/Lectures/23F-Compilation-principle/LexicalSyntacticAnalyzer/main.cpp:
 
 E:/Lectures/23F-Compilation-principle/LexicalSyntacticAnalyzer/utilities.cpp:
-
-C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/hashtable.h:
-
-C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/invoke.h:
-
-C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/unordered_set.h:
-
-C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/uses_allocator.h:
-
-C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/ext/aligned_buffer.h:

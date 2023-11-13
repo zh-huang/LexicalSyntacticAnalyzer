@@ -15,8 +15,10 @@ Lexer::~Lexer() { file.close(); }
 void Lexer::printTokens()
 {
     for (auto &i : tokens) {
-        cout << "Ln" << i.Ln << ", Col" << i.Col << "\t" << i.value << "\t"
-             << TokenTypeName[i.type] << endl;
+        if (i.type != INVALID) {
+            cout << "Ln" << i.Ln << ", Col" << i.Col << "\t" << i.value << "\t"
+                 << TokenTypeName[i.type] << endl;
+        }
     }
 }
 
@@ -25,38 +27,58 @@ Token getType(const string &line, unsigned int &Col, const unsigned int &Ln,
 {
     TokenType type = INVALID;
     string word("");
-    word += line[Col];
     for (auto &i : availType) {
         if (i == KEYWORDS && isKeyword(line, word, Col)) {
             type = KEYWORDS;
+            return Token({Ln, Col + 1, type, word});
         } else if (i == IDENTIFIER && isIdentifier(line, word, Col)) {
             type = IDENTIFIER;
-        } else if (i == VALUE && isKeyword(line, word, Col)) {
+            return Token({Ln, Col + 1, type, word});
+        } else if (i == VALUE && isValue(line, word, Col)) {
             type = VALUE;
-        } else if (i == ASSIGNMENT_OPERATOR && isKeyword(line, word, Col)) {
+            return Token({Ln, Col + 1, type, word});
+        } else if (i == ASSIGNMENT_OPERATOR &&
+                   isAssignmentNumber(line, word, Col)) {
             type = ASSIGNMENT_OPERATOR;
-        } else if (i == OPERATOR && isKeyword(line, word, Col)) {
+            return Token({Ln, Col + 1, type, word});
+        } else if (i == OPERATOR && isOperator(line, word, Col)) {
             type = OPERATOR;
-        } else if (i == BOUNDARY_SYMBOL && isKeyword(line, word, Col)) {
+            return Token({Ln, Col + 1, type, word});
+        } else if (i == BOUNDARY_SYMBOL && isBoundarySymbol(line, word, Col)) {
             type = BOUNDARY_SYMBOL;
-        } else if (i == SEPARATOR && isKeyword(line, word, Col)) {
+            return Token({Ln, Col + 1, type, word});
+        } else if (i == SEPARATOR && isSeparator(line, word, Col)) {
             type = SEPARATOR;
-        } else if (i == COMMENT_OPERATOR && isKeyword(line, word, Col)) {
+            return Token({Ln, Col + 1, type, word});
+        } else if (i == COMMENT_OPERATOR && isCommentNumber(line, word, Col)) {
             type = COMMENT_OPERATOR;
-        } else if (i == LEFT_PARENTHESIS && isKeyword(line, word, Col)) {
+            return Token({Ln, Col + 1, type, word});
+        } else if (i == LEFT_PARENTHESIS &&
+                   isLeftParenthesis(line, word, Col)) {
             type = LEFT_PARENTHESIS;
-        } else if (i == RIGHT_PARENTHESIS && isKeyword(line, word, Col)) {
+            return Token({Ln, Col + 1, type, word});
+        } else if (i == RIGHT_PARENTHESIS &&
+                   isRightParenthesis(line, word, Col)) {
             type = RIGHT_PARENTHESIS;
-        } else if (i == LEFT_BIG_PARENTHESIS && isKeyword(line, word, Col)) {
+            return Token({Ln, Col + 1, type, word});
+        } else if (i == LEFT_BIG_PARENTHESIS &&
+                   isLeftBigParenthesis(line, word, Col)) {
             type = LEFT_BIG_PARENTHESIS;
-        } else if (i == RIGHT_BIG_PARENTHESIS && isKeyword(line, word, Col)) {
+            return Token({Ln, Col + 1, type, word});
+        } else if (i == RIGHT_BIG_PARENTHESIS &&
+                   isRightBigParenthesis(line, word, Col)) {
             type = RIGHT_BIG_PARENTHESIS;
-        } else if (i == LETTER && isKeyword(line, word, Col)) {
+            return Token({Ln, Col + 1, type, word});
+        } else if (i == LETTER && isLetter(line, word, Col)) {
             type = LETTER;
-        } else if (i == NUMBER && isKeyword(line, word, Col)) {
+            return Token({Ln, Col + 1, type, word});
+        } else if (i == NUMBER && isNumber(line, word, Col)) {
             type = NUMBER;
-        } else if (i == ENDING_CHARACTER && isKeyword(line, word, Col)) {
+            return Token({Ln, Col + 1, type, word});
+        } else if (i == ENDING_CHARACTER &&
+                   isEndingCharacter(line, word, Col)) {
             type = ENDING_CHARACTER;
+            return Token({Ln, Col + 1, type, word});
         }
     }
     return Token({Ln, Col + 1, type, word});
@@ -84,11 +106,16 @@ vector<Token> Lexer::analyze()
                              ENDING_CHARACTER};
     while (getline(file, line)) {
         ++Ln;
+        Col = 0;
         while (Col < line.length()) {
-            while (line[Col] < 33 || line[Col] > 126) {
+            while (Col < line.length() && (line[Col] < 33 || line[Col] > 126)) {
                 ++Col;
             }
-            token = getType(line, Col, Ln, availType) tokens.push_back(token);
+            if (Col == line.length()) {
+                break;
+            }
+            token = getType(line, Col, Ln, availType);
+            tokens.push_back(token);
             Col += token.value.length();
         }
     }
