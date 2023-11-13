@@ -72,43 +72,43 @@ CMakeFiles/main.dir/main.cpp.obj: CMakeFiles/main.dir/flags.make
 CMakeFiles/main.dir/main.cpp.obj: E:/Lectures/23F-Compilation-principle/LexicalSyntacticAnalyzer/main.cpp
 CMakeFiles/main.dir/main.cpp.obj: CMakeFiles/main.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=E:\Lectures\23F-Compilation-principle\LexicalSyntacticAnalyzer\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/main.dir/main.cpp.obj"
-	C:\Strawberry\c\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/main.dir/main.cpp.obj -MF CMakeFiles\main.dir\main.cpp.obj.d -o CMakeFiles\main.dir\main.cpp.obj -c E:\Lectures\23F-Compilation-principle\LexicalSyntacticAnalyzer\main.cpp
+	C:\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/main.dir/main.cpp.obj -MF CMakeFiles\main.dir\main.cpp.obj.d -o CMakeFiles\main.dir\main.cpp.obj -c E:\Lectures\23F-Compilation-principle\LexicalSyntacticAnalyzer\main.cpp
 
 CMakeFiles/main.dir/main.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/main.dir/main.cpp.i"
-	C:\Strawberry\c\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E E:\Lectures\23F-Compilation-principle\LexicalSyntacticAnalyzer\main.cpp > CMakeFiles\main.dir\main.cpp.i
+	C:\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E E:\Lectures\23F-Compilation-principle\LexicalSyntacticAnalyzer\main.cpp > CMakeFiles\main.dir\main.cpp.i
 
 CMakeFiles/main.dir/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/main.dir/main.cpp.s"
-	C:\Strawberry\c\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S E:\Lectures\23F-Compilation-principle\LexicalSyntacticAnalyzer\main.cpp -o CMakeFiles\main.dir\main.cpp.s
+	C:\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S E:\Lectures\23F-Compilation-principle\LexicalSyntacticAnalyzer\main.cpp -o CMakeFiles\main.dir\main.cpp.s
 
 CMakeFiles/main.dir/lexer.cpp.obj: CMakeFiles/main.dir/flags.make
 CMakeFiles/main.dir/lexer.cpp.obj: E:/Lectures/23F-Compilation-principle/LexicalSyntacticAnalyzer/lexer.cpp
 CMakeFiles/main.dir/lexer.cpp.obj: CMakeFiles/main.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=E:\Lectures\23F-Compilation-principle\LexicalSyntacticAnalyzer\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/main.dir/lexer.cpp.obj"
-	C:\Strawberry\c\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/main.dir/lexer.cpp.obj -MF CMakeFiles\main.dir\lexer.cpp.obj.d -o CMakeFiles\main.dir\lexer.cpp.obj -c E:\Lectures\23F-Compilation-principle\LexicalSyntacticAnalyzer\lexer.cpp
+	C:\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/main.dir/lexer.cpp.obj -MF CMakeFiles\main.dir\lexer.cpp.obj.d -o CMakeFiles\main.dir\lexer.cpp.obj -c E:\Lectures\23F-Compilation-principle\LexicalSyntacticAnalyzer\lexer.cpp
 
 CMakeFiles/main.dir/lexer.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/main.dir/lexer.cpp.i"
-	C:\Strawberry\c\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E E:\Lectures\23F-Compilation-principle\LexicalSyntacticAnalyzer\lexer.cpp > CMakeFiles\main.dir\lexer.cpp.i
+	C:\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E E:\Lectures\23F-Compilation-principle\LexicalSyntacticAnalyzer\lexer.cpp > CMakeFiles\main.dir\lexer.cpp.i
 
 CMakeFiles/main.dir/lexer.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/main.dir/lexer.cpp.s"
-	C:\Strawberry\c\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S E:\Lectures\23F-Compilation-principle\LexicalSyntacticAnalyzer\lexer.cpp -o CMakeFiles\main.dir\lexer.cpp.s
+	C:\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S E:\Lectures\23F-Compilation-principle\LexicalSyntacticAnalyzer\lexer.cpp -o CMakeFiles\main.dir\lexer.cpp.s
 
 CMakeFiles/main.dir/utilities.cpp.obj: CMakeFiles/main.dir/flags.make
 CMakeFiles/main.dir/utilities.cpp.obj: E:/Lectures/23F-Compilation-principle/LexicalSyntacticAnalyzer/utilities.cpp
 CMakeFiles/main.dir/utilities.cpp.obj: CMakeFiles/main.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=E:\Lectures\23F-Compilation-principle\LexicalSyntacticAnalyzer\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/main.dir/utilities.cpp.obj"
-	C:\Strawberry\c\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/main.dir/utilities.cpp.obj -MF CMakeFiles\main.dir\utilities.cpp.obj.d -o CMakeFiles\main.dir\utilities.cpp.obj -c E:\Lectures\23F-Compilation-principle\LexicalSyntacticAnalyzer\utilities.cpp
+	C:\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/main.dir/utilities.cpp.obj -MF CMakeFiles\main.dir\utilities.cpp.obj.d -o CMakeFiles\main.dir\utilities.cpp.obj -c E:\Lectures\23F-Compilation-principle\LexicalSyntacticAnalyzer\utilities.cpp
 
 CMakeFiles/main.dir/utilities.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/main.dir/utilities.cpp.i"
-	C:\Strawberry\c\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E E:\Lectures\23F-Compilation-principle\LexicalSyntacticAnalyzer\utilities.cpp > CMakeFiles\main.dir\utilities.cpp.i
+	C:\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E E:\Lectures\23F-Compilation-principle\LexicalSyntacticAnalyzer\utilities.cpp > CMakeFiles\main.dir\utilities.cpp.i
 
 CMakeFiles/main.dir/utilities.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/main.dir/utilities.cpp.s"
-	C:\Strawberry\c\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S E:\Lectures\23F-Compilation-principle\LexicalSyntacticAnalyzer\utilities.cpp -o CMakeFiles\main.dir\utilities.cpp.s
+	C:\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S E:\Lectures\23F-Compilation-principle\LexicalSyntacticAnalyzer\utilities.cpp -o CMakeFiles\main.dir\utilities.cpp.s
 
 # Object files for target main
 main_OBJECTS = \

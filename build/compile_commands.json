@@ -1,0 +1,20 @@
+[
+{
+  "directory": "E:/Lectures/23F-Compilation-principle/LexicalSyntacticAnalyzer/build",
+  "command": "C:\\mingw64\\bin\\g++.exe    -std=c++14 -g -Wall -Wextra -pedantic -o CMakeFiles\\main.dir\\main.cpp.obj -c E:\\Lectures\\23F-Compilation-principle\\LexicalSyntacticAnalyzer\\main.cpp",
+  "file": "E:/Lectures/23F-Compilation-principle/LexicalSyntacticAnalyzer/main.cpp",
+  "output": "CMakeFiles/main.dir/main.cpp.obj"
+},
+{
+  "directory": "E:/Lectures/23F-Compilation-principle/LexicalSyntacticAnalyzer/build",
+  "command": "C:\\mingw64\\bin\\g++.exe    -std=c++14 -g -Wall -Wextra -pedantic -o CMakeFiles\\main.dir\\lexer.cpp.obj -c E:\\Lectures\\23F-Compilation-principle\\LexicalSyntacticAnalyzer\\lexer.cpp",
+  "file": "E:/Lectures/23F-Compilation-principle/LexicalSyntacticAnalyzer/lexer.cpp",
+  "output": "CMakeFiles/main.dir/lexer.cpp.obj"
+},
+{
+  "directory": "E:/Lectures/23F-Compilation-principle/LexicalSyntacticAnalyzer/build",
+  "command": "C:\\mingw64\\bin\\g++.exe    -std=c++14 -g -Wall -Wextra -pedantic -o CMakeFiles\\main.dir\\utilities.cpp.obj -c E:\\Lectures\\23F-Compilation-principle\\LexicalSyntacticAnalyzer\\utilities.cpp",
+  "file": "E:/Lectures/23F-Compilation-principle/LexicalSyntacticAnalyzer/utilities.cpp",
+  "output": "CMakeFiles/main.dir/utilities.cpp.obj"
+}
+]

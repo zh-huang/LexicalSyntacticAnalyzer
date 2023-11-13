@@ -1,13 +1,23 @@
 #include "lexer.h"
 
-Token getNextToken(ifstream& iFile)
+Lexer::Lexer(string filename) { source = filename; }
+
+void Lexer::printTokens()
 {
-    Token token;
-    token.type = INVALID;
+    for (auto &i : tokens) {
+        cout << "Ln" << i.Ln << ", Col" << i.Col << "\t" << i.value << "\t"
+             << TokenTypeName[i.type] << endl;
+    }
+}
 
-    char ch;
+vector<Token> Lexer::analyze(const string &filename)
+{
+    int Ln = 0, Col = 0;
+    TokenType type;
 
-    while (iFile.get(ch) && std::isspace(ch));
-
-    return token;
+    for (; 0;) {
+        string currentToken;
+        tokens.push_back({Ln, Col, type, currentToken});
+    }
+    return tokens;
 }

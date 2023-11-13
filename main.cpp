@@ -9,6 +9,9 @@ int main()
     cout << "Lexical Analyzer" << endl;
     string str1("intint");
     string str2("int");
+    if (1) {
+        1;
+    }
     cout << isKeyword(str1) << endl;
     cout << isKeyword(str2) << endl;
     cout << "version = " << version << endl;
