@@ -14,5 +14,5 @@ cmake --build .
 ## 运行
 
 ```cmd
-main input.txt
+main
 ```
