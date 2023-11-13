@@ -7,6 +7,7 @@
 
 using namespace std;
 
+// Enumeration of all token types
 enum TokenType {
     KEYWORDS,               // int | void | if | else | while | return
     IDENTIFIER,             // letter(letter|number)*, not the same as keywords
@@ -26,6 +27,7 @@ enum TokenType {
     INVALID
 };
 
+// Array mapping token types to strings
 const vector<const char *> TokenTypeName = {"Keyword",
                                             "Identifier",
                                             "Value",
@@ -43,6 +45,7 @@ const vector<const char *> TokenTypeName = {"Keyword",
                                             "Ending character",
                                             "Invalid"};
 
+// Token structure
 struct Token {
     unsigned int Ln;
     unsigned int Col;
@@ -50,6 +53,7 @@ struct Token {
     string value;
 };
 
+// Token recognition functions, in utilities.cpp
 bool isKeyword(const string &line, string &word, unsigned int &start);
 bool isIdentifier(const string &line, string &word, unsigned int &start);
 bool isValue(const string &line, string &word, unsigned int &start);
@@ -60,8 +64,10 @@ bool isSeparator(const string &line, string &word, unsigned int &start);
 bool isCommentNumber(const string &line, string &word, unsigned int &start);
 bool isLeftParenthesis(const string &line, string &word, unsigned int &start);
 bool isRightParenthesis(const string &line, string &word, unsigned int &start);
-bool isLeftBigParenthesis(const string &line, string &word, unsigned int &start);
-bool isRightBigParenthesis(const string &line, string &word, unsigned int &start);
+bool isLeftBigParenthesis(const string &line, string &word,
+                          unsigned int &start);
+bool isRightBigParenthesis(const string &line, string &word,
+                           unsigned int &start);
 bool isLetter(const string &line, string &word, unsigned int &start);
 bool isNumber(const string &line, string &word, unsigned int &start);
 bool isEndingCharacter(const string &line, string &word, unsigned int &start);
@@ -70,11 +76,14 @@ class Lexer {
    public:
     Lexer(string filename);
     ~Lexer();
+
+    // Analyze the source code and returns a vector of tokens
     vector<Token> analyze();
+    // Print analyzed tokens to the console
     void printTokens();
 
    private:
-    ifstream file;
-    vector<Token> tokens;
-    string source;
+    string source;          // Input file name
+    ifstream file;          // Input file
+    vector<Token> tokens;   // Analyzed tokens
 };
