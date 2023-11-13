@@ -2,18 +2,15 @@
 
 #include "lexer.h"
 
-const int version = 5;
+const int version = 6;
 
 int main()
 {
-    cout << "Lexical Analyzer" << endl;
-    string str1("intint");
-    string str2("int");
-    if (1) {
-        1;
-    }
-    cout << isKeyword(str1) << endl;
-    cout << isKeyword(str2) << endl;
+    string file = "..\\test1.txt";
+    Lexer lexer(file);
+    lexer.analyze();
+    lexer.printTokens();
+
     cout << "version = " << version << endl;
     return 0;
 }

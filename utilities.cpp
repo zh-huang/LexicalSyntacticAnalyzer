@@ -1,15 +1,12 @@
-#include <string>
-#include <unordered_set>
-
 #include "lexer.h"
 
-const std::unordered_set<std::string> keywords = {"int",  "void",  "if",
-                                                  "else", "while", "return"};
+const vector<string> keywords = {"int",  "void",  "if",
+                                 "else", "while", "return"};
 
-const std::unordered_set<std::string> operators = {
-    "+", "-", "*", "/", "==", ">", ">=", "<", "<=", "!="};
+const vector<string> operators = {
+    "==", ">", ">=", "<", "<=", "!=", "+", "-", "*", "/"};
 
-const std::unordered_set<std::string> comments = {"/*", "*/", "//"};
+const vector<string> comments = {"/*", "*/", "//"};
 
 bool isLetter(char ch)
 {
@@ -18,72 +15,173 @@ bool isLetter(char ch)
 
 bool isDigit(char ch) { return ch >= '0' && ch < '9'; }
 
-bool isKeyword(const std::string &word)
+bool isKeyword(const string &line, string &word, unsigned int &start)
 {
-    return keywords.find(word) != keywords.end();
-}
-
-bool isIdentifier(const std::string &word)
-{
-    if (isKeyword(word)) {
+    if (start >= line.length()) {
         return false;
     }
-    if (word.empty() || !isLetter(word[0])) {
-        return false;
-    }
-    for (char ch : word) {
-        if (!isLetter(ch) && !isDigit(ch)) {
-            return false;
+    for (const string &keyword : keywords) {
+        if (line.compare(start, keyword.length(), keyword) == 0) {
+            if (start + keyword.length() == line.length() ||
+                !isLetter(line[start + keyword.length()]) &&
+                    !isDigit(line[start + keyword.length()])) {
+                word = keyword;
+                return true;
+            }
         }
     }
+    return false;
+}
+
+bool isIdentifier(const string &line, string &word, unsigned int &start)
+{
+    if (start >= line.length() || !isLetter(line[start])) {
+        return false;
+    }
+    for (unsigned int i = start;
+         i < line.length() && (isLetter(line[i]) || isDigit(line[i])); ++i)
+        word += line[i];
     return true;
 }
 
-bool isValue(const std::string &word)
+bool isValue(const string &line, string &word, unsigned int &start)
 {
-    if (word.empty() || !isDigit(word[0])) {
+    if (start >= line.length() || !isDigit(line[start])) {
         return false;
     }
-    for (char ch : word) {
-        if (!isDigit(ch)) {
-            return false;
-        }
-    }
+    for (unsigned int i = start; i < line.length() && isDigit(line[i]); ++i)
+        word += line[i];
     return true;
 }
 
-bool isAssignmentNumber(const std::string &word) { return word == "="; }
-
-bool isOperator(const std::string &word)
+bool isAssignmentNumber(const string &line, string &word, unsigned int &start)
 {
-    return operators.find(word) != operators.end();
+    if (start >= line.length() || line[start] != '=') {
+        return false;
+    }
+    for (unsigned int i = start + 1; i < line.length(); ++i) {
+        if (isDigit(line[i] || isLetter(line[i]))) break;
+        if (line[i] == '=' || line[i] == '>' || line[i] == '<') return false;
+    }
+    word += line[start];
+    return true;
 }
 
-bool isBoundarySymbol(const std::string &word) { return word == ";"; }
-
-bool isSeparator(const std::string &word) { return word == ","; }
-
-bool isCommentNumber(const std::string &word)
+bool isOperator(const string &line, string &word, unsigned int &start)
 {
-    return comments.find(word) != comments.end();
+    if (start >= line.length()) {
+        return false;
+    }
+    for (const string &keyword : keywords) {
+        for (unsigned int i = 0, j = 0;
+             i < keyword.length() && j + start < line.length(); ++i, ++j) {
+            while (line[j + start] < 33 && line[j + start] > 126) {
+                ++j;
+            }
+            if (keyword[i] != line[j + start]) {
+                break;
+            }
+            if (i == keyword.length() - 1) {
+                word = keyword;
+                return true;
+            }
+        }
+    }
+    return false;
 }
 
-bool isLeftParenthesis(const std::string &word) { return word == "("; }
-
-bool isRightParenthesis(const std::string &word) { return word == ")"; }
-
-bool isLeftBigParenthesis(const std::string &word) { return word == "{"; }
-
-bool isRightBigParenthesis(const std::string &word) { return word == "}"; }
-
-bool isLetter(const std::string &word)
+bool isBoundarySymbol(const string &line, string &word, unsigned int &start)
 {
-    return word.length() == 1 && isLetter(word[0]);
+    if (start >= line.length() || line[start] != ';') {
+        return false;
+    }
+    word += line[start];
+    return true;
 }
 
-bool isNumber(const std::string &word)
+bool isSeparator(const string &line, string &word, unsigned int &start)
 {
-    return word.length() == 1 && isDigit(word[0]);
+    if (start >= line.length() || line[start] != ',') {
+        return false;
+    }
+    word += line[start];
+    return true;
 }
 
-bool isEndingCharacter(const std::string &word) { return false; }
+bool isCommentNumber(const string &line, string &word, unsigned int &start)
+{
+    if (start + 2 >= line.length()) {
+        return false;
+    }
+    for (auto &comment : comments) {
+        if (line.compare(start, comment.length(), comment) == 0) {
+            word = comment;
+            return true;
+        }
+    }
+    return false;
+}
+
+bool isLeftParenthesis(const string &line, string &word, unsigned int &start)
+{
+    if (start >= line.length() || line[start] != '(') {
+        return false;
+    }
+    word += line[start];
+    return true;
+}
+
+bool isRightParenthesis(const string &line, string &word, unsigned int &start)
+{
+    if (start >= line.length() || line[start] != ')') {
+        return false;
+    }
+    word += line[start];
+    return true;
+}
+
+bool isLeftBigParenthesis(const string &line, string &word, unsigned int &start)
+{
+    if (start >= line.length() || line[start] != '{') {
+        return false;
+    }
+    word += line[start];
+    return true;
+}
+
+bool isRightBigParenthesis(const string &line, string &word,
+                           unsigned int &start)
+{
+    if (start >= line.length() || line[start] != '}') {
+        return false;
+    }
+    word += line[start];
+    return true;
+}
+
+bool isLetter(const string &line, string &word, unsigned int &start)
+{
+    if (start >= line.length() || !isLetter(line[start])) {
+        return false;
+    }
+    word += line[start];
+    return true;
+}
+
+bool isNumber(const string &line, string &word, unsigned int &start)
+{
+    if (start >= line.length() || !isDigit(line[start])) {
+        return false;
+    }
+    word += line[start];
+    return true;
+}
+
+bool isEndingCharacter(const string &line, string &word, unsigned int &start)
+{
+    if (start >= line.length() || line[start] != '#') {
+        return false;
+    }
+    word += line[start];
+    return true;
+}

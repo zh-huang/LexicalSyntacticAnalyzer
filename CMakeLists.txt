@@ -1,7 +1,7 @@
 # CMakeLists.txt
 
 cmake_minimum_required(VERSION 3.10)
-project(LexerExample)
+project(LexicalSyntacticAnalyzer)
 
 add_executable(main main.cpp lexer.cpp utilities.cpp)
 set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -std=c++14")

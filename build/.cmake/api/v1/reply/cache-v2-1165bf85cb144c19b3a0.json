@@ -891,7 +891,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "LexerExample"
+			"value" : "LexicalSyntacticAnalyzer"
 		},
 		{
 			"name" : "CMAKE_RANLIB",
@@ -1311,6 +1311,42 @@
 		},
 		{
 			"name" : "LexerExample_SOURCE_DIR",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : "Value Computed by CMake"
+				}
+			],
+			"type" : "STATIC",
+			"value" : "E:/Lectures/23F-Compilation-principle/LexicalSyntacticAnalyzer"
+		},
+		{
+			"name" : "LexicalSyntacticAnalyzer_BINARY_DIR",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : "Value Computed by CMake"
+				}
+			],
+			"type" : "STATIC",
+			"value" : "E:/Lectures/23F-Compilation-principle/LexicalSyntacticAnalyzer/build"
+		},
+		{
+			"name" : "LexicalSyntacticAnalyzer_IS_TOP_LEVEL",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : "Value Computed by CMake"
+				}
+			],
+			"type" : "STATIC",
+			"value" : "ON"
+		},
+		{
+			"name" : "LexicalSyntacticAnalyzer_SOURCE_DIR",
 			"properties" : 
 			[
 				{

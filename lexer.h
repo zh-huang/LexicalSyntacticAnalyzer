@@ -20,7 +20,7 @@ enum TokenType {
     RIGHT_PARENTHESIS,      // )
     LEFT_BIG_PARENTHESIS,   // {
     RIGHT_BIG_PARENTHESIS,  // }
-    LETTER,                 // |a|...|z|A|...|Z|
+    LETTER,                 // |a|...|z|A|...|Z|_|
     NUMBER,                 // 0--9
     ENDING_CHARACTER,       // #
     INVALID
@@ -44,35 +44,37 @@ const vector<const char *> TokenTypeName = {"Keyword",
                                             "Invalid"};
 
 struct Token {
-    int Ln;
-    int Col;
+    unsigned int Ln;
+    unsigned int Col;
     TokenType type;
     string value;
 };
 
-bool isKeyword(const string &word);
-bool isIdentifier(const string &word);
-bool isValue(const string &word);
-bool isAssignmentNumber(const string &word);
-bool isOperator(const string &word);
-bool isBoundarySymbol(const string &word);
-bool isSeparator(const string &word);
-bool isCommentNumber(const string &word);
-bool isLeftParenthesis(const string &word);
-bool isRightParenthesis(const string &word);
-bool isLeftBigParenthesis(const string &word);
-bool isRightBigParenthesis(const string &word);
-bool isLetter(const string &word);
-bool isNumber(const string &word);
-bool isEndingCharacter(const string &word);
+bool isKeyword(const string &line, string &word, unsigned int &start);
+bool isIdentifier(const string &line, string &word, unsigned int &start);
+bool isValue(const string &line, string &word, unsigned int &start);
+bool isAssignmentNumber(const string &line, string &word, unsigned int &start);
+bool isOperator(const string &line, string &word, unsigned int &start);
+bool isBoundarySymbol(const string &line, string &word, unsigned int &start);
+bool isSeparator(const string &line, string &word, unsigned int &start);
+bool isCommentNumber(const string &line, string &word, unsigned int &start);
+bool isLeftParenthesis(const string &line, string &word, unsigned int &start);
+bool isRightParenthesis(const string &line, string &word, unsigned int &start);
+bool isLeftBigParenthesis(const string &line, string &word, unsigned int &start);
+bool isRightBigParenthesis(const string &line, string &word, unsigned int &start);
+bool isLetter(const string &line, string &word, unsigned int &start);
+bool isNumber(const string &line, string &word, unsigned int &start);
+bool isEndingCharacter(const string &line, string &word, unsigned int &start);
 
 class Lexer {
    public:
-   Lexer(string filename);
-    vector<Token> analyze(const string &filename);
+    Lexer(string filename);
+    ~Lexer();
+    vector<Token> analyze();
     void printTokens();
 
    private:
+    ifstream file;
     vector<Token> tokens;
     string source;
 };
