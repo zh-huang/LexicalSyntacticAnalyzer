@@ -1,0 +1,70 @@
+Program ::= <declare_list>
+
+<declare_list> ::= <declare> <declare_list>
+<declare_list> ::= <declare>
+
+<declare> ::= 'int' <ID> <var_declare>
+<declare> ::= 'int' <ID> <func_declare>
+<declare> ::= 'void' <ID> <func_declare>
+
+<var_declare> ::= ';'
+<func_declare> ::= '(' <formal_param> ')' <sentence_block>
+
+<formal_param> ::= <param_list>
+<param_list> ::= <param>
+<param_list> ::= <param> ',' <param_list>
+<param> ::= 'int' <ID>
+
+<sentence_block> ::= '{' <inner_declare_list> <sentence_list> '}'
+
+<inner_declare_list> ::=
+<inner_declare_list> ::= <inner_var_declare> ';' <inner_declare_list>
+<inner_declare_list> ::= <inner_var_declare>
+<inner_var_declare> ::= 'int' <ID>
+
+<sentence_list> ::= <sentence> <sentence_list>
+<sentence_list> ::= <sentence>
+
+<sentence> ::= <if_statement>
+<if_statement> ::= 'if' '(' <expression> ')' <sentence_block> 'else' <sentence_block>
+<if_statement> ::= 'if' '(' <expression> ')' <sentence_block>
+
+<sentence> ::= <while_statement>
+<while_statement> ::= 'while' '(' <expression> ')' <sentence_block>
+
+<sentence> ::= <return_statement>
+<return_statement> ::= 'return' ';'
+<return_statement> ::= 'return' <expression> ';'
+
+<sentence> ::= <assignment_statement>
+<assignment_statement> ::= <ID> '=' <expression> ';'
+
+<expression> ::= <add_expression> <relop> <expression>
+<expression> ::= <add_expression>
+
+<relop> ::= '>'
+<relop> ::= '<'
+<relop> ::= '=='
+<relop> ::= '>='
+<relop> ::= '<='
+<relop> ::= '!='
+
+<add_expression> ::= <item> + <add_expression>
+<add_expression> ::= <item> - <add_expression>
+<add_expression> ::= <item>
+
+<item> ::= <factor> * <item>
+<item> ::= <factor> / <item>
+<item> ::= <factor>
+
+<factor> ::= <num>
+<factor> ::= '(' <expression> ')'
+<factor> ::= <ID> <FTYPE>
+
+<FTYPE> ::= <call>
+<FTYPE> ::=
+<call> ::= '(' <argument_list> ')'
+
+<argument_list> ::= <expression> ',' <argument_list>
+<argument_list> ::= <expression>
+<argument_list> ::=
